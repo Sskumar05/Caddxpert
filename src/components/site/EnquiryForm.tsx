@@ -2,14 +2,11 @@ import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { CheckCircle2, Mail, Phone, MapPin } from "lucide-react";
 import { useRouter } from "@tanstack/react-router";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { toast } from "sonner";
 
-type FormData = {
-  name: string;
-  mobile: string;
-  email: string;
-  course: string;
-  message: string;
-};
+import { enquirySchema, type EnquiryInput } from "@/lib/enquiry";
+import { submitEnquiry } from "@/lib/api/enquiry.server";
 
 const courseOptions = [
   "AutoCAD", "Civil CAD", "Mechanical CAD", "Electrical CAD", "Revit",
@@ -20,20 +17,32 @@ const courseOptions = [
 export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
   const [sent, setSent] = useState(false);
   const router = useRouter();
+  
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } =
-    useForm<FormData>();
+    useForm<EnquiryInput>({
+      resolver: zodResolver(enquirySchema)
+    });
 
-  const onSubmit = async (data: FormData) => {
-    await new Promise((r) => setTimeout(r, 600));
-    console.log("enquiry:", data);
-    setSent(true);
-    reset();
-    
-    // Redirect to thank you page after 1.5s
-    setTimeout(() => {
-      setSent(false);
-      router.navigate({ to: "/thank-you" });
-    }, 1500);
+  const onSubmit = async (data: EnquiryInput) => {
+    try {
+      // Call TanStack Start server function
+      const result = await submitEnquiry({ data });
+
+      if (result.success) {
+        toast.success(result.message || "Enquiry submitted successfully!");
+        setSent(true);
+        reset();
+        
+        // Redirect to thank you page after 1.5s
+        setTimeout(() => {
+          setSent(false);
+          router.navigate({ to: "/thank-you" });
+        }, 1500);
+      }
+    } catch (error: any) {
+      console.error("Enquiry submission failed:", error);
+      toast.error(error.message || "Failed to submit enquiry. Please try again.");
+    }
   };
 
   const formContent = (
@@ -45,7 +54,7 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
       <div>
         <label className="text-sm font-semibold text-charcoal">Student Name</label>
         <input
-          {...register("name", { required: "Name is required", maxLength: 80 })}
+          {...register("name")}
           className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none"
           placeholder="Your full name"
         />
@@ -56,10 +65,7 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
         <div>
           <label className="text-sm font-semibold text-charcoal">Mobile Number</label>
           <input
-            {...register("mobile", {
-              required: "Mobile is required",
-              pattern: { value: /^[6-9]\d{9}$/, message: "Enter a valid 10-digit number" },
-            })}
+            {...register("mobile")}
             className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none"
             placeholder="10-digit mobile"
           />
@@ -69,10 +75,7 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
           <label className="text-sm font-semibold text-charcoal">Email</label>
           <input
             type="email"
-            {...register("email", {
-              required: "Email is required",
-              pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Invalid email" },
-            })}
+            {...register("email")}
             className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none"
             placeholder="you@example.com"
           />
@@ -83,7 +86,7 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
       <div>
         <label className="text-sm font-semibold text-charcoal">Course Interested</label>
         <select
-          {...register("course", { required: "Please select a course" })}
+          {...register("course")}
           className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none"
           defaultValue=""
         >
@@ -96,11 +99,12 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
       <div>
         <label className="text-sm font-semibold text-charcoal">Message</label>
         <textarea
-          {...register("message", { maxLength: 500 })}
+          {...register("message")}
           rows={3}
           className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none resize-none"
           placeholder="Tell us about your goals (optional)"
         />
+        {errors.message && <p className="mt-1 text-xs text-destructive">{errors.message.message}</p>}
       </div>
 
       <button type="submit" disabled={isSubmitting} className="btn-primary w-full !py-3.5">
@@ -109,7 +113,7 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
 
       {sent && (
         <div className="flex items-center gap-2 rounded-xl bg-emerald-50 text-emerald-700 px-4 py-3 text-sm">
-          <CheckCircle2 className="h-4 w-4" /> Thanks! Redirecting...
+          <CheckCircle2 className="h-4 w-4" /> Enquiry Submitted ✓ Redirecting...
         </div>
       )}
     </form>

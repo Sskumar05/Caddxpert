@@ -13,6 +13,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { SplashScreen } from "../components/site/SplashScreen";
+import { Toaster } from "sonner";
 
 function NotFoundComponent() {
   return (
@@ -111,10 +112,10 @@ function RootShell({ children }: { children: ReactNode }) {
         {children}
         <Scripts />
         <script
-          src="https://caddxpert-chatbot.onrender.com/widget.js"
-          data-api="https://caddxpert-chatbot.onrender.com"
+          src="https://caddxpert-chatbot-1.onrender.com/widget.js"
+          data-api="https://caddxpert-chatbot-1.onrender.com"
           defer
-        />
+        ></script>
       </body>
     </html>
   );
@@ -127,6 +128,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <ScrollRestoration />
       <SplashScreen />
+      <Toaster position="bottom-right" richColors />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>
