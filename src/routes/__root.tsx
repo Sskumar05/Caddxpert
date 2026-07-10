@@ -112,9 +112,8 @@ function RootShell({ children }: { children: ReactNode }) {
         {children}
         <Scripts />
         <script
-          src="https://caddxpert-chatbot-1.onrender.com/widget.js"
-          data-api="https://caddxpert-chatbot-1.onrender.com"
-          defer
+          src="https://caddxpert-chatbot-ts5v.onrender.com/widget.js"
+          data-api="https://caddxpert-chatbot-ts5v.onrender.com"
         ></script>
       </body>
     </html>

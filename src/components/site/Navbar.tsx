@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, X, MessageCircle, Compass } from "lucide-react";
 import { Link, useLocation } from "@tanstack/react-router";
-import logoImg from "@/assets/courses/Logo_img.png";
+import logoImg from "@/assets/logo-removebg-preview.png";
 
 const links = [
   { href: "/", label: "Home" },
@@ -34,11 +34,11 @@ export function Navbar() {
       <div className="container-x flex h-16 md:h-20 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span>
-            <img src={logoImg} alt="Logo" className="h-20 w-20 sm:h-25 sm:w-25 mb-[-8] sm:mb-[-8]" />
+            <img src={logoImg} alt="Logo" className="h-10 w-15 sm:h-12 sm:w-17" />
           </span>
           <div className="leading-tight">
-            <div className="font-display text-md font-extrabold text-charcoal sm:text-lg ">CADPOINT</div>
-            <div className="text-[10px] tracking-widest text-muted-foreground sm:-mt-0.5">TIRUVARUR</div>
+            <div className="font-display text-md font-extrabold text-charcoal sm:text-lg ">CADD XPERT</div>
+            <div className="text-[10px] tracking-widest text-muted-foreground sm:-mt-0.5">AI INNOVATIONS</div>
           </div>
         </Link>
 

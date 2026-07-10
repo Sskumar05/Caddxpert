@@ -1,4 +1,6 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
+import whatsapp from "@/assets/whatsapp_img.png"; 
+
 
 function scrollToEnquiry() {
   const el = document.getElementById("enquiry-form");
@@ -40,7 +42,7 @@ export function EnquiryCTA() {
                 rel="noreferrer"
                 className="btn-whatsapp !px-5 !py-3 !text-base"
               >
-                <MessageCircle className="h-4 w-4" /> WhatsApp Us
+                <img src={whatsapp} className="h-5 w-5" /> WhatsApp Us
               </a>
             </div>
           </div>

@@ -18,38 +18,298 @@ import imgStaad from "@/assets/courses/staad_pro.png";
 import imgCatia from "@/assets/courses/catia.png";
 import imgSolidworks from "@/assets/courses/solidworks.png";
 import imgPython from "@/assets/courses/python.jpg";
-// import imgJava from "@/assets/courses/java.jpg";
 import imgFullStack from "@/assets/courses/full_stack.jpg";
 import imgDataScience from "@/assets/courses/data_science.jpg";
 import imgTally from "@/assets/courses/tally.jpg";
 
+export const courseCategories = [
+  { slug: "civil-courses", name: "Civil & Architecture", desc: "Design, architectural and structural modeling.", image: imgAutocad },
+  { slug: "mechanical-courses", name: "Mechanical & Aerospace", desc: "Site plans and civil drafting.", image: imgCivil },
+  { slug: "mep-courses", name: "MEP, Piping & Plant", desc: "Part modeling, assembly & product design.", image: imgMech },
+  { slug: "enterprise-courses", name: "Enterprise Resource Planning", desc: "Schematic and wiring design.", image: imgElec },
+  { slug: "project-courses", name: "Project Management", desc: "Schematic and wiring design.", image: imgElec },
+  { slug: "finance-courses", name: "Finance & Accounting", desc: "Software development, IT & Data Science.", image: imgFullStack },
+  { slug: "general-courses", name: "General CAD & QA", desc: "Business accounting & finance.", image: imgTally },
+  { slug: "data-courses", name: "Data Analytics & Reporting", desc: "Business accounting & finance.", image: imgTally },
+  { slug: "electrical-courses", name: "Electrical & Electronics", desc: "Business accounting & finance.", image: imgTally },
+  { slug: "digital-courses", name: "Digital Marketing", desc: "Business accounting & finance.", image: imgTally },
+
+];
+
+
 export const courses = [
-  { slug: "autocad", name: "AutoCAD", desc: "2D & 3D drafting for design professionals.", duration: "2 Months", cat: "CAD", image: imgAutocad,
-    details: "Learn the industry standard for computer-aided design. This comprehensive AutoCAD course covers everything from basic 2D drafting commands to advanced 3D modeling techniques. Perfect for beginners and professionals looking to upgrade their skills." },
-  { slug: "civil-cad", name: "Civil CAD", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
-    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
-  { slug: "mechanical-cad", name: "Mechanical CAD", desc: "Part modeling, assembly & drafting.", duration: "3 Months", cat: "Mech", image: imgMech,
+
+  { slug: "Design Visualization Essential", categorySlug: "civil-courses", name: "Design Visualization Essential", desc: "Part modeling, assembly & drafting.", duration: "3 Months", cat: "Mech", image: imgMech,
     details: "Focus on the mechanical aspects of CAD. You'll learn parametric part modeling, complex assemblies, and how to generate production-ready drafting and detailing." },
-  { slug: "electrical-cad", name: "Electrical CAD", desc: "Schematic, panel & wiring design.", duration: "2 Months", cat: "Elec", image: imgElec,
-    details: "Specialized training for electrical engineers and draftsmen. Learn to create precise electrical schematics, panel layouts, and comprehensive wiring diagrams." },
-  { slug: "revit-architecture", name: "Revit Architecture", desc: "BIM modeling for architects.", duration: "3 Months", cat: "BIM", image: imgRevit,
-    details: "Step into the world of Building Information Modeling (BIM). This course teaches you how to design, coordinate, and document architectural projects efficiently using Revit." },
-  { slug: "staad-pro", name: "STAAD Pro", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
-    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
-  { slug: "catia", name: "CATIA", desc: "Advanced surface & product design.", duration: "3 Months", cat: "Mech", image: imgCatia,
+
+    { slug: "V-Ray Essential", categorySlug: "civil-courses", name: "V-Ray Essential", desc: "Advanced surface & product design.", duration: "3 Months", cat: "Mech", image: imgCatia,
     details: "Master advanced product design with CATIA. This course focuses on complex surface modeling, mechanical design, and assemblies used in aerospace and automotive industries." },
-  { slug: "solidworks", name: "SolidWorks", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+
+    { slug: "SketchUp Essential", categorySlug: "civil-courses", name: "SketchUp Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
-  { slug: "python-programming", name: "Python Programming", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
+
+    { slug: "Revit Architecture Essential", categorySlug: "civil-courses", name: "Revit Architecture Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "STAAD .Pro Essential", categorySlug: "civil-courses", name: "STAAD .Pro Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Construction Management using MSP", categorySlug: "civil-courses", name: "Construction Management using MSP", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Max for Engineers/Architects Essential", categorySlug: "civil-courses", name: "Max for Engineers/Architects Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "ETABS Essential", categorySlug: "civil-courses", name: "ETABS Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "MSP with PPM Concepts Essential", categorySlug: "civil-courses", name: "MSP with PPM Concepts Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Building Estimation and Costing with Simulation", categorySlug: "civil-courses", name: "Building Estimation and Costing with Simulation", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "ProSteel Essential", categorySlug: "civil-courses", name: "ProSteel Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Ansys Civil Essential", categorySlug: "civil-courses", name: "Ansys Civil Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "AECOsim Essential", categorySlug: "civil-courses", name: "AECOsim Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "AutoCAD Civil 3D Essential", categorySlug: "civil-courses", name: "AutoCAD Civil 3D Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "MicroStation Essential", categorySlug: "civil-courses", name: "MicroStation Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "MX Road Essential", categorySlug: "civil-courses", name: "MX Road Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "RCC Detailing Essential", categorySlug: "civil-courses", name: "RCC Detailing Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in AutoCAD for Civil Engineers and Architects", categorySlug: "civil-courses", name: "Proficient in AutoCAD for Civil Engineers and Architects", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in Revit", categorySlug: "civil-courses", name: "Proficient in Revit", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in STAAD.Pro", categorySlug: "civil-courses", name: "Proficient in STAAD.Pro", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in Primavera for Construction Management", categorySlug: "civil-courses", name: "Proficient in Primavera for Construction Management", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in Interior & Architectural Design", categorySlug: "civil-courses", name: "Proficient in Interior & Architectural Design", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in Construction Management using Primavera & MSP", categorySlug: "civil-courses", name: "Proficient in Construction Management using Primavera & MSP", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+
+    { slug: "Proficient in 3D BIM", categorySlug: "civil-courses", name: "Proficient in 3D BIM", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+  
+      { slug: "Proficient in BIM for Transportation Design", categorySlug: "civil-courses", name: "Proficient in BIM for Transportation Design", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in BIM for Structural Design", categorySlug: "civil-courses", name: "Proficient in BIM for Structural Design", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in 5D BIM", categorySlug: "civil-courses", name: "Proficient in 5D BIM", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+
+
+    // Mechanical & Aerospace //
+
+      { slug: "GD&T-Essential", categorySlug: "mechanical-courses", name: "GD&T Essential", desc: "2D & 3D drafting for design professionals.", duration: "2 Months", cat: "CAD", image: imgAutocad,
+    details: "Learn the industry standard for computer-aided design. This comprehensive AutoCAD course covers everything from basic 2D drafting commands to advanced 3D modeling techniques. Perfect for beginners and professionals looking to upgrade their skills." },
+
+  { slug: "Creo Essential", categorySlug: "mechanical-courses", name: "Creo Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+    { slug: "NX CAD Essential", categorySlug: "mechanical-courses", name: "NX CAD Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "SolidWorks Essential", categorySlug: "mechanical-courses", name: "SolidWorks Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "CATIA Essential", categorySlug: "mechanical-courses", name: "CATIA Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Ansys Workbench Essential", categorySlug: "mechanical-courses", name: "Ansys Workbench Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Mastercam Essential", categorySlug: "mechanical-courses", name: "Mastercam Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Ansys Fluent Essential", categorySlug: "mechanical-courses", name: "Ansys Fluent Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Autodesk Inventor Essential", categorySlug: "mechanical-courses", name: "Autodesk Inventor Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "CATIA Kinematics Essential", categorySlug: "mechanical-courses", name: "CATIA Kinematics Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Creo Simulate Essential", categorySlug: "mechanical-courses", name: "Creo Simulate Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "HyperMesh Essential", categorySlug: "mechanical-courses", name: "HyperMesh Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "NX Nastran Essential", categorySlug: "mechanical-courses", name: "NX Nastran Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "NX CAM Essential", categorySlug: "mechanical-courses", name: "NX CAM Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Reverse Engineering using CATIA Essential", categorySlug: "mechanical-courses", name: "Reverse Engineering using CATIA Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "SolidWorks Motion Essential", categorySlug: "mechanical-courses", name: "SolidWorks Motion Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Non-Destructive Testing Essential", categorySlug: "mechanical-courses", name: "Non-Destructive Testing Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in AutoCAD for Mechanical Engineers", categorySlug: "mechanical-courses", name: "Proficient in AutoCAD for Mechanical Engineers", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in Creo", categorySlug: "mechanical-courses", name: "Proficient in Creo", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in SolidWork", categorySlug: "mechanical-courses", name: "Proficient in SolidWork", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in NX", categorySlug: "mechanical-courses", name: "Proficient in NX", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in CATIA", categorySlug: "mechanical-courses", name: "Proficient in CATIA", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in CAE", categorySlug: "mechanical-courses", name: "Proficient in CAE", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+      { slug: "Proficient in Ansys", categorySlug: "mechanical-courses", name: "Proficient in Ansys", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    details: "Master the tools needed for civil engineering drafting. Learn to create detailed site plans, floor plans, elevations, and structural drawings that meet industry standards." },
+
+
+
+    
+    // MEP, Piping & Plant //
+
+  { slug: "PDMS Essential", categorySlug: "mep-courses", name: "PDMS Essential", desc: "Schematic, panel & wiring design.", duration: "2 Months", cat: "Elec", image: imgElec,
+    details: "Specialized training for electrical engineers and draftsmen. Learn to create precise electrical schematics, panel layouts, and comprehensive wiring diagrams." },
+
+  { slug: "HVAC Design Essential", categorySlug: "mep-courses", name: "HVAC Design Essential", desc: "BIM modeling for architects.", duration: "3 Months", cat: "BIM", image: imgRevit,
+    details: "Step into the world of Building Information Modeling (BIM). This course teaches you how to design, coordinate, and document architectural projects efficiently using Revit." },
+
+  { slug: "REVIT MEP Essential", categorySlug: "mep-courses", name: "REVIT MEP Essential", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Proficient in MEP Design", categorySlug: "mep-courses", name: "Proficient in MEP Design", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Proficient in HVAC and MEP Design", categorySlug: "mep-courses", name: "Proficient in HVAC and MEP Design", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Proficient in Piping Design", categorySlug: "mep-courses", name: "Proficient in Piping Design", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "SP3D", categorySlug: "mep-courses", name: "SP3D", desc: "SP3D", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "E3D", categorySlug: "mep-courses", name: "E3D", desc: "E3D", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+
+    // Enterprise Resource Planning //
+
+     { slug: "SAP Finance and Controlling (FICO)", categorySlug: "enterprise-courses", name: "SAP Finance and Controlling (FICO)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "SAP Material Management (MM)", categorySlug: "enterprise-courses", name: "SAP Material Management (MM)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "SAP Production and Planning (PP)", categorySlug: "enterprise-courses", name: "SAP Production and Planning (PP)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "SAP Sales and Distribution (SD)", categorySlug: "enterprise-courses", name: "SAP Sales and Distribution (SD)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+  
+      // Project Management //
+      
+      { slug: "Primavera Project Planning and Management (Foundation)", categorySlug: "project-courses", name: "Primavera Project Planning and Management (Foundation)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Primavera Scheduling Professional (SPP)", categorySlug: "project-courses", name: "Primavera Scheduling Professional (SPP)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Primavera Tracking Professional (TP)", categorySlug: "project-courses", name: "Primavera Tracking Professional (TP)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Primavera Application Administration (AA)", categorySlug: "project-courses", name: "Primavera Application Administration (AA)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+
+
+    // Finance & Accounting //
+
+     { slug: "Business Accounting and Taxation", categorySlug: "finance-courses", name: "Business Accounting and Taxation", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Tally Prime Foundation", categorySlug: "finance-courses", name: "Tally Prime Foundation", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Tally Prime Advanced", categorySlug: "finance-courses", name: "Tally Prime Advanced", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Tally Prime Complete", categorySlug: "finance-courses", name: "Tally Prime Complete", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      // General CAD & QA //
+
+       { slug: "AutoCAD Essential", categorySlug: "general-courses", name: "AutoCAD Essential", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Proficient in CAD", categorySlug: "general-courses", name: "Proficient in CAD", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+      { slug: "Proficient in QA/QC", categorySlug: "general-courses", name: "Proficient in QA/QC", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    details: "Learn advanced structural analysis and design. This course covers everything from modeling and loading to analyzing and designing complex concrete and steel structures." },
+
+
+    // Data Analytics & Reporting //
+
+  { slug: "MS Excel (Basics)", categorySlug: "data-courses", name: "MS Excel (Basics)", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
     details: "Start your programming journey with Python. This course covers core concepts, data structures, object-oriented programming, and practical automation scripts." },
-  // { slug: "java-full-stack", name: "Java Full Stack", desc: "Core Java, Spring Boot & databases.", duration: "4 Months", cat: "IT", image: imgJava,
-  //   details: "Become a complete Java developer. Learn Core Java, advanced Java concepts, Spring Boot framework, REST APIs, and database integration for enterprise applications." },
-  { slug: "full-stack-development", name: "Full Stack Development", desc: "MERN stack with live projects.", duration: "5 Months", cat: "IT", image: imgFullStack,
+
+  { slug: "Advanced Excel", categorySlug: "data-courses", name: "Advanced Excel", desc: "MERN stack with live projects.", duration: "5 Months", cat: "IT", image: imgFullStack,
     details: "Master the MERN stack (MongoDB, Express.js, React, Node.js). Build responsive frontends and robust backends through hands-on, live project development." },
-  { slug: "data-science", name: "Data Science", desc: "Python, ML, Pandas & visualization.", duration: "5 Months", cat: "IT", image: imgDataScience,
+    
+  { slug: "Microsoft Power BI", categorySlug: "data-courses", name: "Microsoft Power BI", desc: "Python, ML, Pandas & visualization.", duration: "5 Months", cat: "IT", image: imgDataScience,
     details: "Dive into data science. Learn data manipulation with Pandas, data visualization techniques, and foundational Machine Learning algorithms using Python." },
-  { slug: "tally-prime", name: "Tally Prime", desc: "Accounting, GST & business analytics.", duration: "2 Months", cat: "Biz", image: imgTally,
-    details: "Essential training for accounting professionals. Learn comprehensive business accounting, inventory management, taxation (GST), and financial reporting using Tally Prime." },
+
+
+       // Electrical & Electronics //
+
+  { slug: "Proficient in AutoCAD for Electrical & Electronics Engineers", categorySlug: "electrical-courses", name: "Proficient in AutoCAD for Electrical & Electronics Engineers", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
+    details: "Start your programming journey with Python. This course covers core concepts, data structures, object-oriented programming, and practical automation scripts." },
+
+  { slug: "Proficient in Electrical CAD", categorySlug: "electrical-courses", name: "Proficient in Electrical CAD", desc: "MERN stack with live projects.", duration: "5 Months", cat: "IT", image: imgFullStack,
+    details: "Master the MERN stack (MongoDB, Express.js, React, Node.js). Build responsive frontends and robust backends through hands-on, live project development." },
+
+
+       // Digital Marketing //
+
+  { slug: "Certified Digital Marketing Program (Foundation)", categorySlug: "digital-courses", name: "Certified Digital Marketing Program (Foundation)", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
+    details: "Start your programming journey with Python. This course covers core concepts, data structures, object-oriented programming, and practical automation scripts." },
+
+
 ];
 
 export const placementCompanies = ["Larsen & Toubro", "TCS", "Infosys", "Wipro", "Cognizant", "L&T Construction", "Godrej", "Ashok Leyland", "HCL", "Accenture", "Mahindra", "Capgemini"];

@@ -58,7 +58,7 @@ function Index() {
             </div>
           </div>
         </div>
-        <Newsletter />
+        {/* <Newsletter /> */}
       </PageWrapper>
       <Footer />
       <WhatsAppFloat />

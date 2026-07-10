@@ -1,6 +1,6 @@
 import { Compass, Facebook, Instagram, Youtube, Linkedin, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "@tanstack/react-router";
-import logoImg from "@/assets/courses/Logo_img.png";
+import logoImg from "@/assets/logo-removebg-preview.png";
 
 export function Footer() {
   return (
@@ -9,11 +9,11 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <span className="inline-flex h-15 w-15 rounded-full bg-white">
-              <img src={logoImg} alt="Logo" className="h-15 w-15" />
+              <img src={logoImg} alt="Logo" className="h-12 w-15 md:h-12 md:w-15 md:pt-2" />
             </span>
             <div>
-              <div className="font-display text-lg font-extrabold">CADPOINT</div>
-              <div className="text-[10px] tracking-widest text-white/60 -mt-0.5">TIRUVARUR</div>
+              <div className="font-display text-lg font-extrabold">CADD XPERT</div>
+              <div className="text-[10px] tracking-widest text-white/60 -mt-0.5">AI INNOVATIONS</div>
             </div>
           </div>
           <p className="mt-4 text-sm text-white/70 leading-relaxed">
