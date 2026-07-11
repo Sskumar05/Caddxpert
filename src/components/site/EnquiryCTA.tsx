@@ -21,7 +21,7 @@ export function EnquiryCTA() {
             <div className="max-w-xl">
               <span className="eyebrow !bg-white/10 !text-white">Admissions Open 2026</span>
               <h2 className="mt-4 text-3xl md:text-4xl font-extrabold leading-tight">
-                Limited seats. Big careers. Enroll now at CADPOINT Tiruvarur.
+                Limited seats. Big careers. Enroll now at CADDXPERT AI SOLUTIONS Tiruvarur.
               </h2>
               <p className="mt-3 text-white/75">
                 Talk to our counsellors today and find the right course for your career path.

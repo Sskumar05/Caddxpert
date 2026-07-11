@@ -14,6 +14,8 @@ export function Breadcrumb({ title }: { title?: string }) {
           </Link>
         </li>
         {pathnames.map((value, index) => {
+          if (value.toLowerCase() === "category") return null;
+
           const isLast = index === pathnames.length - 1;
           const to = `/${pathnames.slice(0, index + 1).join("/")}`;
           

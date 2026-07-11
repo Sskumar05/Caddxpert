@@ -15,7 +15,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <span className="eyebrow">#1 CAD & IT Training Institute in Tiruvarur</span>
+          <span className="eyebrow">Courses Powered Caddpoint</span>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-charcoal leading-[1.05]">
             Build Your Career with{" "}
             <span className="bg-gradient-to-r from-brand-red to-brand-dark-red bg-clip-text text-transparent">
@@ -49,7 +49,7 @@ export function Hero() {
               ))}
             </div>
             <div>
-              <div className="font-bold text-charcoal">12,500+ Students</div>
+              <div className="font-bold text-charcoal">2000+ Students</div>
               <div className="text-xs text-muted-foreground">trust CADPOINT for their career</div>
             </div>
           </div>
@@ -97,7 +97,7 @@ export function Hero() {
               <Briefcase className="h-4 w-4 text-brand-red" />
               <span className="text-xs font-semibold text-muted-foreground">Placements</span>
             </div>
-            <div className="mt-1 text-2xl font-extrabold text-charcoal">5,000+</div>
+            <div className="mt-1 text-2xl font-extrabold text-charcoal">2000+</div>
             <div className="text-[11px] text-muted-foreground">Successful careers</div>
           </motion.div>
 

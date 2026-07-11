@@ -15,7 +15,7 @@ export const Route = createFileRoute("/courses/category/$categorySlug")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData.category.name} | CADPOINT Tiruvarur` },
+      { title: `${loaderData.category.name} | CADD XPERT Tiruvarur` },
       { name: "description", content: loaderData.category.desc },
     ],
   }),
@@ -53,21 +53,10 @@ function CategoryPage() {
                 data-aos-delay={(i % 4) * 100}
                 className="card-soft overflow-hidden flex flex-col group"
               >
-                <div className="relative h-40 overflow-hidden">
-                  <img
-                    src={c.image}
-                    alt={c.name}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-charcoal/60 transition-opacity duration-500 group-hover:bg-charcoal/40" />
-                  <span className="absolute top-3 right-3 text-[10px] font-bold tracking-wider bg-black/40 text-white px-2 py-1 rounded-full backdrop-blur z-10">
-                    {c.cat}
-                  </span>
-                </div>
-                <div className="p-5 flex-1 flex flex-col relative z-20 bg-card">
-                  <h3 className="font-bold text-charcoal">{c.name}</h3>
-                  <p className="mt-1.5 text-sm text-muted-foreground flex-1">{c.desc}</p>
-                  <div className="mt-4 flex items-center justify-between">
+                <div className="p-6 flex-1 flex flex-col bg-card border">
+                  <h3 className="text-lg font-bold text-charcoal">{c.name}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground flex-1">{c.desc}</p>
+                  <div className="mt-5 flex items-center justify-between">
                     <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground">
                       <Clock className="h-3.5 w-3.5" /> {c.duration}
                     </span>

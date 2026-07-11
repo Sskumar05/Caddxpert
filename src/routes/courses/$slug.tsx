@@ -12,7 +12,7 @@ export const Route = createFileRoute("/courses/$slug")({
     const course = courses.find((c) => c.slug === params.slug);
     return {
       meta: [
-        { title: `${course?.name || "Course"} | CADPOINT Tiruvarur` },
+        { title: `${course?.name || "Course"} | CADD XPERT Tiruvarur` },
         { name: "description", content: course?.desc || "Course details." },
       ],
     };
@@ -60,12 +60,12 @@ function CourseDetailsPage() {
                 
                 <h3 className="text-2xl font-bold text-charcoal mt-8">What You Will Learn</h3>
                 <ul className="space-y-3 mt-4">
-                  {[
+                  {(course.learns ?? [
                     "Industry-standard tools and techniques",
                     "Practical hands-on project experience",
                     "Real-world application and problem solving",
                     "Preparation for certification and employment"
-                  ].map((item, i) => (
+                  ]).map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
                       <CheckCircle2 className="h-6 w-6 text-brand-red flex-shrink-0" />
                       <span>{item}</span>

@@ -37,7 +37,7 @@ export function Navbar() {
             <img src={logoImg} alt="Logo" className="h-10 w-15 sm:h-12 sm:w-17" />
           </span>
           <div className="leading-tight">
-            <div className="font-display text-md font-extrabold text-charcoal sm:text-lg ">CADD XPERT</div>
+            <div className="font-display text-md font-extrabold text-charcoal sm:text-lg ">CADDXPERT</div>
             <div className="text-[10px] tracking-widest text-muted-foreground sm:-mt-0.5">AI INNOVATIONS</div>
           </div>
         </Link>

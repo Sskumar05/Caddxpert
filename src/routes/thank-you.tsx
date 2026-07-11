@@ -8,7 +8,7 @@ import { CheckCircle2, ArrowLeft } from "lucide-react";
 export const Route = createFileRoute("/thank-you")({
   head: () => ({
     meta: [
-      { title: "Thank You | CADPOINT Tiruvarur" },
+      { title: "Thank You | CADD XPERT Tiruvarur" },
       { name: "robots", content: "noindex, follow" },
     ],
   }),

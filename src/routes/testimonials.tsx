@@ -10,7 +10,7 @@ import { testimonialsData } from "@/lib/data";
 export const Route = createFileRoute("/testimonials")({
   head: () => ({
     meta: [
-      { title: "Testimonials | CADPOINT Tiruvarur" },
+      { title: "Testimonials | CADD XPERT Tiruvarur" },
       { name: "description", content: "Read what our successful students say about their learning and placement experience at CADPOINT." },
     ],
   }),
@@ -31,7 +31,7 @@ function TestimonialsPage() {
               Hear from our <span className="text-brand-red">successful</span> students
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Discover how CADPOINT has transformed careers and helped students achieve their professional goals.
+              Discover how CADDXPERT has transformed careers and helped students achieve their professional goals.
             </p>
           </div>
 

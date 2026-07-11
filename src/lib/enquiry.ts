@@ -19,6 +19,9 @@ export const enquirySchema = z.object({
   course: z
     .string({ required_error: "Please select a course" })
     .min(1, "Please select a course"),
+  subCourse: z
+    .string({ required_error: "Please select a sub-course" })
+    .min(1, "Please select a sub-course"),
   message: z
     .string()
     .max(1000, "Message must not exceed 1000 characters")

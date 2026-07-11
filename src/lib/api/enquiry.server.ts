@@ -32,6 +32,7 @@ export const submitEnquiry = createServerFn({ method: "POST" })
         mobile_number: data.mobile,
         email: data.email,
         course_interested: data.course,
+        sub_course: data.subCourse,
         message: data.message || null,
       };
 
@@ -70,6 +71,7 @@ export const submitEnquiry = createServerFn({ method: "POST" })
               <p><strong>Mobile:</strong> ${data.mobile}</p>
               <p><strong>Email:</strong> ${data.email}</p>
               <p><strong>Course Interested:</strong> ${data.course}</p>
+              <p><strong>Sub-Course:</strong> ${data.subCourse}</p>
               <p><strong>Message:</strong> ${data.message || "N/A"}</p>
               <p><strong>Submitted At:</strong> ${submittedDate}</p>
             `,
@@ -83,7 +85,7 @@ export const submitEnquiry = createServerFn({ method: "POST" })
             subject: "Thank you for your enquiry - CADPOINT Tiruvarur",
             html: `
               <h2>Thank You for Contacting Us, ${data.name}!</h2>
-              <p>We have successfully received your enquiry regarding the <strong>${data.course}</strong> course.</p>
+              <p>We have successfully received your enquiry regarding the <strong>${data.subCourse}</strong> course under the <strong>${data.course}</strong> category.</p>
               <p>Our admissions team will review your details and get back to you within 24 hours.</p>
               <br/>
               <p><strong>Your Message:</strong></p>

@@ -10,7 +10,7 @@ import { placementCompanies, placementStories } from "@/lib/data";
 export const Route = createFileRoute("/placements")({
   head: () => ({
     meta: [
-      { title: "Placements | CADPOINT Tiruvarur" },
+      { title: "Placements | CADD XPERT Tiruvarur" },
       { name: "description", content: "View our successful placement records and the top companies where our students are working." },
     ],
   }),
@@ -31,7 +31,7 @@ function PlacementsPage() {
               Our graduates work at <span className="text-brand-red">India's</span> top companies
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              5,000+ students placed across CAD, engineering and IT roles with leading employers.
+              2,000+ students placed across CAD, engineering and IT roles with leading employers.
             </p>
           </div>
 

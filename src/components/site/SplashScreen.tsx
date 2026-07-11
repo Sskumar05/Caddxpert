@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import logoImg from "@/assets/courses/Logo_img.png";
+import logoImg from "@/assets/logo-removebg-preview.png";
 
 export function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
@@ -47,7 +47,7 @@ export function SplashScreen() {
               className="mt-6 flex flex-col items-center text-center relative z-10"
             >
               <h1 className="font-display text-2xl md:text-3xl font-extrabold text-charcoal tracking-wide" >
-                <span className="text-brand-red font-light">CADPOINT</span> Thiruvarur
+                <span className="text-brand-red">CADDXPERT AI INNAOVATIONS</span>
               </h1>
               <p className="mt-1 text-xs md:text-sm tracking-[0.2em] text-muted-foreground font-medium uppercase">
                 Authorized Training Centre

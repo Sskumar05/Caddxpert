@@ -16,7 +16,7 @@ export function Gallery({ limit }: { limit?: number }) {
           <div data-aos="fade-right" className="max-w-2xl">
             <span className="eyebrow">Campus Life</span>
             <h2 className="mt-4 text-3xl md:text-4xl font-extrabold text-charcoal">
-              Inside the CADPOINT experience
+              Inside the CADD<span className="text-brand-black">X</span>PERT experience
             </h2>
           </div>
           <Link to="/gallery" className="btn-outline self-start md:self-end" data-aos="fade-left">

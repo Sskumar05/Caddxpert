@@ -12,7 +12,7 @@ export function WhyChoose() {
     <section className="py-20 md:py-28">
       <div className="container-x">
         <div className="max-w-2xl mx-auto text-center" data-aos="fade-up">
-          <span className="eyebrow">Why CADPOINT</span>
+          <span className="eyebrow">Why CADDXPERT</span>
           <h2 className="mt-4 text-3xl md:text-4xl font-extrabold text-charcoal">
             Everything you need to launch your career
           </h2>

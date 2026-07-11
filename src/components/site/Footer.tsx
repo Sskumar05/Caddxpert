@@ -9,10 +9,10 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <span className="inline-flex h-15 w-15 rounded-full bg-white">
-              <img src={logoImg} alt="Logo" className="h-12 w-15 md:h-12 md:w-15 md:pt-2" />
+              <img src={logoImg} alt="Logo" className="h-10 w-15 sm:h-12 sm:w-15 object-contain m-auto pl-1 ml-[-2px]" />
             </span>
             <div>
-              <div className="font-display text-lg font-extrabold">CADD XPERT</div>
+              <div className="font-display text-lg font-extrabold">CADDXPERT</div>
               <div className="text-[10px] tracking-widest text-white/60 -mt-0.5">AI INNOVATIONS</div>
             </div>
           </div>
@@ -94,7 +94,7 @@ export function Footer() {
       </div>
 
       <div className="container-x mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-white/60">
-        <div>© {new Date().getFullYear()} CADPOINT Tiruvarur. All rights reserved.</div>
+        <div>© {new Date().getFullYear()} CADD<span className="text-white/60 text-sm">X</span>PERT AI SOLUTIONS Tiruvarur. All rights reserved.</div>
         <div className="flex gap-5">
           <a href="#" className="hover:text-white">Privacy Policy</a>
           <a href="#" className="hover:text-white">Terms of Service</a>

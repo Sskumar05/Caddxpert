@@ -12,7 +12,7 @@ import "yet-another-react-lightbox/styles.css";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Gallery | CADPOINT Tiruvarur" },
+      { title: "Gallery | CADD XPERT Tiruvarur" },
       { name: "description", content: "Explore photos of our campus, classrooms, labs, events, and student life at CADPOINT Tiruvarur." },
     ],
   }),
@@ -32,7 +32,7 @@ function GalleryPage() {
           <div className="max-w-3xl mb-12" data-aos="fade-up">
             <span className="eyebrow">Campus Life</span>
             <h1 className="mt-4 text-4xl md:text-5xl font-extrabold text-charcoal leading-tight">
-              Inside the <span className="text-brand-red">CADPOINT</span> experience
+              Inside the <span className="text-brand-red">CADDXPERT</span> experience
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
               Take a look at our state-of-the-art facilities, classroom sessions, and vibrant student community.

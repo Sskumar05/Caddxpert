@@ -19,10 +19,10 @@ function useCountUp(target: number, start: boolean, duration = 1600) {
 }
 
 const items = [
-  { value: 12500, suffix: "+", label: "Students Trained" },
+  { value: 2000, suffix: "+", label: "Students Trained" },
   { value: 120, suffix: "+", label: "Courses Offered" },
   { value: 98, suffix: "%", label: "Satisfaction Rate" },
-  { value: 5000, suffix: "+", label: "Successful Placements" },
+  { value: 100, suffix: "%", label: "Successful Placements" },
 ];
 
 export function StatsDark() {
@@ -49,7 +49,7 @@ export function StatsDark() {
             Trusted by thousands across Tamil Nadu
           </h2>
           <p className="mt-3 text-white/70">
-            Real results. Real careers. Real CADPOINT graduates working at top firms.
+            Real results. Real careers. Real CADD XPERT graduates working at top firms.
           </p>
         </div>
 
@@ -82,9 +82,9 @@ function StatCard({ item, index, inView }: { item: typeof items[number]; index: 
 
 export function TrustStrip() {
   const t = [
-    { v: "12,500+", l: "Students Trained" },
+    { v: "2000+", l: "Students Trained" },
     { v: "100%", l: "Placement Assistance" },
-    { v: "50+", l: "Industry Trainers" },
+    { v: "20+", l: "Industry Trainers" },
     { v: "15+ Yrs", l: "Experience" },
   ];
   return (

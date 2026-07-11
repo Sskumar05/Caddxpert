@@ -10,8 +10,8 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | CADPOINT Tiruvarur" },
-      { name: "description", content: "Get in touch with CADPOINT Tiruvarur. Visit our campus or contact us for course inquiries, admissions, and placement assistance." },
+      { title: "Contact Us | CADD XPERT Tiruvarur" },
+      { name: "description", content: "Get in touch with CADD XPERT Tiruvarur. Visit our campus or contact us for course inquiries, admissions, and placement assistance." },
     ],
   }),
   component: ContactPage,

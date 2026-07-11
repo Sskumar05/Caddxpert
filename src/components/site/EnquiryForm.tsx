@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { CheckCircle2, Mail, Phone, MapPin } from "lucide-react";
 import { useRouter } from "@tanstack/react-router";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -7,21 +7,35 @@ import { toast } from "sonner";
 
 import { enquirySchema, type EnquiryInput } from "@/lib/enquiry";
 import { submitEnquiry } from "@/lib/api/enquiry.server";
+import { subCourseMap } from "@/lib/data";
 
 const courseOptions = [
-  "AutoCAD", "Civil CAD", "Mechanical CAD", "Electrical CAD", "Revit",
-  "STAAD Pro", "CATIA", "SolidWorks", "Python", "Java",
-  "Full Stack Development", "Data Science", "Tally",
+ "Civil & Architecture",
+"Mechanical & Aerospace",
+"MEP, Piping & Plant",
+"Enterprise Resource Planning",
+"Project Management",
+"Finance & Accounting",
+"General CAD & QA",
+"Data Analytics & Reporting",
+"Electrical & Electronics",
+"Digital Marketing",
 ];
 
 export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
   const [sent, setSent] = useState(false);
   const router = useRouter();
   
-  const { register, handleSubmit, reset, formState: { errors, isSubmitting } } =
+  const { register, handleSubmit, reset, watch, setValue, formState: { errors, isSubmitting } } =
     useForm<EnquiryInput>({
       resolver: zodResolver(enquirySchema)
     });
+
+  const selectedCourse = watch("course");
+
+  useEffect(() => {
+    setValue("subCourse", "");
+  }, [selectedCourse, setValue]);
 
   const onSubmit = async (data: EnquiryInput) => {
     try {
@@ -83,17 +97,37 @@ export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
         </div>
       </div>
 
-      <div>
-        <label className="text-sm font-semibold text-charcoal">Course Interested</label>
-        <select
-          {...register("course")}
-          className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none"
-          defaultValue=""
-        >
-          <option value="" disabled>Select a course</option>
-          {courseOptions.map((c) => <option key={c} value={c}>{c}</option>)}
-        </select>
-        {errors.course && <p className="mt-1 text-xs text-destructive">{errors.course.message}</p>}
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label className="text-sm font-semibold text-charcoal">Course Interested</label>
+          <select
+            {...register("course")}
+            className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none"
+            defaultValue=""
+          >
+            <option value="" disabled>Select a course</option>
+            {courseOptions.map((c) => <option key={c} value={c}>{c}</option>)}
+          </select>
+          {errors.course && <p className="mt-1 text-xs text-destructive">{errors.course.message}</p>}
+        </div>
+
+        <div>
+          <label className="text-sm font-semibold text-charcoal">Sub-Course</label>
+          <select
+            {...register("subCourse")}
+            className="mt-1.5 w-full rounded-xl border bg-background px-4 py-3 text-sm focus:border-brand-red focus:ring-2 focus:ring-brand-red/20 outline-none disabled:opacity-50 disabled:cursor-not-allowed"
+            defaultValue=""
+            disabled={!selectedCourse}
+          >
+            <option value="" disabled>
+              {selectedCourse ? "Select a sub-course" : "Select a category first"}
+            </option>
+            {selectedCourse && subCourseMap[selectedCourse]?.map((sc) => (
+              <option key={sc} value={sc}>{sc}</option>
+            ))}
+          </select>
+          {errors.subCourse && <p className="mt-1 text-xs text-destructive">{errors.subCourse.message}</p>}
+        </div>
       </div>
 
       <div>

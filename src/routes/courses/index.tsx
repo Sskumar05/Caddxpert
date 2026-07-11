@@ -10,7 +10,7 @@ import { courseCategories } from "@/lib/data";
 export const Route = createFileRoute("/courses/")({
   head: () => ({
     meta: [
-      { title: "Course Categories | CADPOINT Tiruvarur" },
+      { title: "Course Categories | CADD XPERT Tiruvarur" },
       { name: "description", content: "Explore our wide range of industry-oriented course categories in CAD, BIM, IT, Full Stack, Data Science, and more." },
     ],
   }),

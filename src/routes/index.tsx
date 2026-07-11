@@ -17,9 +17,9 @@ import { PageWrapper } from "@/components/site/PageWrapper";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CADPOINT Tiruvarur — CAD & IT Training Institute" },
+      { title: "CADD XPERT Tiruvarur — CAD & IT Training Institute" },
       { name: "description", content: "Premier CAD & IT training in Tiruvarur. AutoCAD, Revit, CATIA, SolidWorks, Python, Full Stack — 100% placement assistance." },
-      { property: "og:title", content: "CADPOINT Tiruvarur — CAD & IT Training Institute" },
+      { property: "og:title", content: "CADD XPERT Tiruvarur — CAD & IT Training Institute" },
       { property: "og:description", content: "Industry-oriented CAD & IT training with expert mentors and placement support." },
     ],
     links: [

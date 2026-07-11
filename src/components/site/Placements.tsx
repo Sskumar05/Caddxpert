@@ -14,7 +14,7 @@ export function Placements({ limit }: { limit?: number }) {
             Our graduates work at India's top companies
           </h2>
           <p className="mt-3 text-muted-foreground">
-            5,000+ students placed across CAD, engineering and IT roles with leading employers.
+            2000+ students placed across CAD, engineering and IT roles with leading employers.
           </p>
         </div>
 

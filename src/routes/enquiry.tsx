@@ -9,7 +9,7 @@ import { EnquiryForm } from "@/components/site/EnquiryForm";
 export const Route = createFileRoute("/enquiry")({
   head: () => ({
     meta: [
-      { title: "Enquiry Form | CADPOINT Tiruvarur" },
+      { title: "Enquiry Form | CADD XPERT Tiruvarur" },
       { name: "description", content: "Submit an enquiry to CADPOINT Tiruvarur to learn more about our courses, fees, and batch timings." },
     ],
   }),

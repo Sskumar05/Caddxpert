@@ -30,7 +30,7 @@ function AboutPage() {
               Empowering careers through <span className="text-brand-red">expert training</span> since 2010.
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              CADPOINT Tiruvarur is an ISO-certified educational institute dedicated to providing industry-standard training in CAD, BIM, IT, and related technologies. We bridge the gap between academic learning and industry requirements.
+              CADDXPERT Tiruvarur is an ISO-certified educational institute dedicated to providing industry-standard training in CAD, BIM, IT, and related technologies. We bridge the gap between academic learning and industry requirements.
             </p>
           </div>
         </div>

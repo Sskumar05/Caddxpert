@@ -40,22 +40,94 @@ export const courseCategories = [
 export const courses = [
 
   { slug: "Design Visualization Essential", categorySlug: "civil-courses", name: "Design Visualization Essential", desc: "Part modeling, assembly & drafting.", duration: "3 Months", cat: "Mech", image: imgMech,
-    details: "Focus on the mechanical aspects of CAD. You'll learn parametric part modeling, complex assemblies, and how to generate production-ready drafting and detailing." },
+    details: "Focus on the mechanical aspects of CAD. You'll learn parametric part modeling, complex assemblies, and how to generate production-ready drafting and detailing.",
+   learns: [
+      "Inference Techniques",
+      "Modeling Entities",
+      "Push/Pull Modification",
+      "Object Editing",
+      "Measurement & Annotation",
+      "Match photo modeling",
+      "Components: General & Dynamic",
+      "Modeling from DWG",
+      "Model visualization",
+      "Model documentation",
+    ] },
 
     { slug: "V-Ray Essential", categorySlug: "civil-courses", name: "V-Ray Essential", desc: "Advanced surface & product design.", duration: "3 Months", cat: "Mech", image: imgCatia,
-    details: "Master advanced product design with CATIA. This course focuses on complex surface modeling, mechanical design, and assemblies used in aerospace and automotive industries." },
+    details: "Master advanced product design with CATIA. This course focuses on complex surface modeling, mechanical design, and assemblies used in aerospace and automotive industries.",
+    learns: [
+      "V-Ray Rendering Engines",
+      "V-Ray Image Sampling Techniques",
+      "V-Ray Lights",
+      "Global Illumination for Exterior Scenes",
+      "Global Illumination for Interior Scenes",
+      "V-Ray Physical Camera",
+      "V-Ray Materials",
+      "V-Ray Aerial Perspective",
+      "V-Ray Objects",
+      "V-Ray Render Elements",
+    ] },
 
     { slug: "SketchUp Essential", categorySlug: "civil-courses", name: "SketchUp Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
-    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings.",
+    learns: [
+      "Inference Techniques",
+      "Modeling Entities,",
+      "Push/Pull Modification",
+      "Object Editing",
+      "Measurement & Annotation",
+      "Match photo modeling",
+      "Components: General & Dynamic",
+      "Modeling from DWG",
+      "Model visualization",
+      "Model documentation",
+    ]  },
 
     { slug: "Revit Architecture Essential", categorySlug: "civil-courses", name: "Revit Architecture Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
-    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings.",
+    learns: [
+      "Project workflow",
+      "Levels & Grids",
+      "Walls Modeling",
+      "Object Modifying",
+      "Doors & Windows",
+      "Floors & Roofs",
+      "Curtain wall, Stairs & Ramps",
+      "Dimensions & Constraints",
+      "Annotations & Documentation",
+      "Schedules",
+    ]  },
 
     { slug: "STAAD .Pro Essential", categorySlug: "civil-courses", name: "STAAD .Pro Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
-    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings.",
+    learns: [
+      "STAAD Editor",
+      "Modeling of Structures,",
+      "Objects and Model Editing",
+      "Model Specification",
+      "Loads & load combination",
+      "Structural Analysis",
+      "Wind load analysis",
+      "Water tank Design",
+      "RC Structure Design",
+      "Steel Structure design",
+    ] },
 
     { slug: "Construction Management using MSP", categorySlug: "civil-courses", name: "Construction Management using MSP", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
-    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
+    details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings.",
+   learns: [
+      "STAAD Editor",
+      "Modeling of Structures,",
+      "Objects and Model Editing",
+      "Model Specification",
+      "Loads & load combination",
+      "Structural Analysis",
+      "Wind load analysis",
+      "Water tank Design",
+      "RC Structure Design",
+      "Steel Structure design",
+    ]  },
 
     { slug: "Max for Engineers/Architects Essential", categorySlug: "civil-courses", name: "Max for Engineers/Architects Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Become proficient in SolidWorks. Learn parametric 3D modeling, sheet metal design, weldments, and how to create detailed engineering drawings." },
@@ -340,9 +412,16 @@ export const galleryImages = [
 ];
 
 export const testimonialsData = [
-  { name: "Aravind P.", course: "AutoCAD + Revit", text: "CADPOINT changed my career. The trainers explain every concept practically, and I got placed within a month of finishing my course.", rating: 5 },
+  { name: "Aravind P.", course: "AutoCAD + Revit", text: " CADDXPERT changed my career. The trainers explain every concept practically, and I got placed within a month of finishing my course.", rating: 5 },
   { name: "Meena R.", course: "Full Stack Development", text: "Loved the live projects and one-on-one mentorship. The placement team helped me crack my first developer interview.", rating: 5 },
   { name: "Vignesh S.", course: "CATIA", text: "Best institute in Tiruvarur for mechanical CAD. Industry-grade labs and friendly faculty. Highly recommended!", rating: 5 },
   { name: "Lakshmi K.", course: "Python + Data Science", text: "Hands-on training with real datasets. I now work as a data analyst thanks to CADPOINT's career support.", rating: 5 },
   { name: "Rohit V.", course: "Java Full Stack", text: "The curriculum is very up-to-date with current industry standards. The mock interviews were especially helpful.", rating: 5 },
 ];
+
+export const subCourseMap: Record<string, string[]> = courseCategories.reduce((acc, category) => {
+  acc[category.name] = courses
+    .filter((course) => course.categorySlug === category.slug)
+    .map((course) => course.name);
+  return acc;
+}, {} as Record<string, string[]>);
