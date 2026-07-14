@@ -15,7 +15,7 @@ const resolveEnv = (key: string) => {
 };
 
 const RESEND_API_KEY = resolveEnv("VITE_RESEND_API_KEY");
-const RESEND_FROM_EMAIL = resolveEnv("VITE_RESEND_FROM_EMAIL") || "onboarding@resend.dev";
+const RESEND_FROM_EMAIL = resolveEnv("VITE_RESEND_FROM_EMAIL") || "onboarding@caddxpertai.in";
 
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
