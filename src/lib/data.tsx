@@ -9,31 +9,38 @@ import g9 from "@/assets/cad_img9.png";
 import g10 from "@/assets/cad_img10.png";
 import g11 from "@/assets/cad_img11.png";
 
-import imgAutocad from "@/assets/courses/autocad.png";
-import imgCivil from "@/assets/courses/civil_cad.png";
-import imgMech from "@/assets/courses/mechanical_cad.png";
-import imgElec from "@/assets/courses/electrical_cad.png";
-import imgRevit from "@/assets/courses/revit.png";
-import imgStaad from "@/assets/courses/staad_pro.png";
+import imgAutocad from "@/assets/courses/civil_cad.png";
+import imgCivil from "@/assets/courses/mechaero.png";
+import imgMech from "@/assets/courses/mep.png";
+import imgElec from "@/assets/courses/erp.png";
+import imgRevit from "@/assets/courses/management.png";
+import imgStaad from "@/assets/courses/finance.png";
 import imgCatia from "@/assets/courses/catia.png";
-import imgSolidworks from "@/assets/courses/solidworks.png";
-import imgPython from "@/assets/courses/python.jpg";
-import imgFullStack from "@/assets/courses/full_stack.jpg";
-import imgDataScience from "@/assets/courses/data_science.jpg";
-import imgTally from "@/assets/courses/tally.jpg";
+import imgSolidworks from "@/assets/courses/analyst.png";
+import imgPython from "@/assets/courses/electronic.png";
+import imgFullStack from "@/assets/courses/digital.png";
+import imgDataScience from "@/assets/courses/development.png";
+import imgindustrials from "@/assets/courses/industrial.png";
+import imgautomations from "@/assets/courses/automation.png";
+import imgspecials from "@/assets/courses/special.png";
+
+
 
 export const courseCategories = [
   { slug: "civil-courses", name: "Civil & Architecture", desc: "Architectural design, drafting, and structural engineering.", image: imgAutocad },
   { slug: "mechanical-courses", name: "Mechanical & Aerospace", desc: "Mechanical design, manufacturing, and product development.", image: imgCivil },
   { slug: "mep-courses", name: "MEP, Piping & Plant", desc: "Building services, piping, and plant engineering.", image: imgMech },
   { slug: "enterprise-courses", name: "Enterprise Resource Planning", desc: "Business process management with ERP solutions.", image: imgElec },
-  { slug: "project-courses", name: "Project Management", desc: "Planning, scheduling, and project execution.", image: imgElec },
-  { slug: "finance-courses", name: "Finance & Accounting", desc: "Accounting, taxation, and financial management.", image: imgFullStack },
-  { slug: "general-courses", name: "General CAD & QA", desc: "CAD drafting and quality assurance fundamentals.", image: imgTally },
-  { slug: "data-courses", name: "Data Analytics & Reporting", desc: "Data analysis, visualization, and business reporting.", image: imgTally },
-  { slug: "electrical-courses", name: "Electrical & Electronics", desc: "Electrical design and industrial automation.", image: imgTally },
-  { slug: "digital-courses", name: "Digital Marketing", desc: "SEO, social media, and online marketing strategies.", image: imgTally },
-
+  { slug: "project-courses", name: "Project Management", desc: "Planning, scheduling, and project execution.", image: imgRevit },
+  { slug: "finance-courses", name: "Finance & Accounting", desc: "Accounting, taxation, and financial management.", image: imgStaad},
+  { slug: "general-courses", name: "General CAD & QA", desc: "CAD drafting and quality assurance fundamentals.", image: imgCatia },
+  { slug: "data-courses", name: "Data Analytics & Reporting", desc: "Data analysis, visualization, and business reporting.", image: imgSolidworks },
+  { slug: "electrical-courses", name: "Electrical & Electronics", desc: "Electrical design and industrial automation.", image: imgPython },
+  { slug: "digital-courses", name: "Digital Marketing", desc: "SEO, social media, and online marketing strategies.", image: imgFullStack },
+  { slug: "software-courses", name: "Software Development", desc: "Programming, web development, and app development.", image: imgDataScience },
+  { slug: "industrial-automation", name: "Industrial Automation", desc: "PLC, SCADA, and Industrial Control Systems.", image: imgindustrials },
+  { slug: "electronic-design-automation", name: "Electronic Design Automation", desc: "MATLAB, Microcontrollers, and Embedded Systems.", image: imgautomations },
+  { slug: "special-programs", name: "Special Programs", desc: "Data Science, AI, Machine Learning, and Emerging Technologies.", image: imgspecials },
 ];
 
 
@@ -56,7 +63,510 @@ export interface Course {
 }
 
 export const courses: Course[] = [
-
+  {
+    slug: "java-programming",
+    categorySlug: "software-courses",
+    name: "Java",
+    desc: "Core Java Programming",
+    details: "An introduction to object-oriented programming using Java, covering basic syntax, data types, control flow, classes, objects, and foundational libraries.",
+    duration: "2 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "Java Syntax and Basics",
+      "Object-Oriented Programming (OOP) Concepts",
+      "Control Flow Statements",
+      "Arrays and Strings",
+      "Exception Handling",
+      "Basic I/O Operations"
+    ]
+  },
+  {
+    slug: "advanced-java",
+    categorySlug: "software-courses",
+    name: "Advanced Java",
+    desc: "Enterprise Application Development",
+    details: "Builds upon Core Java to develop web applications and enterprise solutions using technologies like Servlets, JSP, JDBC, and popular frameworks.",
+    duration: "3 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "JDBC (Java Database Connectivity)",
+      "Servlets",
+      "JSP (JavaServer Pages)",
+      "Introduction to Spring / Hibernate",
+      "Web Services (REST / SOAP)",
+      "Multithreading and Concurrency"
+    ]
+  },
+  {
+    slug: "c-programming",
+    categorySlug: "software-courses",
+    name: "C Programming",
+    desc: "Foundational System Programming",
+    details: "Learn the fundamentals of procedural programming with C, covering memory management, pointers, data structures, and file handling.",
+    duration: "1.5 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "C Basics and Syntax",
+      "Functions",
+      "Pointers",
+      "Arrays and Strings",
+      "Structures and Unions",
+      "File Handling"
+    ]
+  },
+  {
+    slug: "cpp-programming",
+    categorySlug: "software-courses",
+    name: "C++ Programming",
+    desc: "Object-Oriented C++",
+    details: "Master object-oriented programming concepts using C++, including inheritance, polymorphism, templates, and STL.",
+    duration: "2 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "C++ Basics",
+      "Classes and Objects",
+      "Inheritance",
+      "Polymorphism",
+      "Templates",
+      "Standard Template Library (STL)"
+    ]
+  },
+  {
+    slug: "python-programming",
+    categorySlug: "software-courses",
+    name: "Python",
+    desc: "Versatile Programming for Web, Data & Automation",
+    details: "Learn Python programming from basics to advanced concepts for automation, web development, and data analysis.",
+    duration: "2 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "Python Basics",
+      "Data Structures",
+      "Functions and Modules",
+      "Object-Oriented Programming",
+      "File Handling",
+      "NumPy & Pandas Basics"
+    ]
+  },
+  {
+    slug: "full-stack-development",
+    categorySlug: "software-courses",
+    name: "Full Stack Development (MEAN / MERN)",
+    desc: "End-to-End Web Development",
+    details: "Build complete web applications using MongoDB, Express.js, Angular/React, and Node.js.",
+    duration: "4-6 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "HTML, CSS & JavaScript",
+      "React / Angular",
+      "Node.js & Express.js",
+      "MongoDB",
+      "REST APIs",
+      "Deployment"
+    ]
+  },
+  {
+    slug: "django-framework",
+    categorySlug: "software-courses",
+    name: "Django",
+    desc: "Python Web Framework",
+    details: "Develop secure and scalable web applications using Django and Django REST Framework.",
+    duration: "2 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "Django Architecture",
+      "Models & Migrations",
+      "Views & URLs",
+      "Templates & Forms",
+      "Authentication",
+      "REST APIs"
+    ]
+  },
+  {
+    slug: "android-app-development",
+    categorySlug: "software-courses",
+    name: "Android App Development using Kotlin",
+    desc: "Modern Android Development",
+    details: "Create modern Android applications using Kotlin, Android Studio, Jetpack components, and REST APIs.",
+    duration: "3 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "Kotlin Basics",
+      "Android Studio",
+      "Activities & Fragments",
+      "Jetpack Compose / XML",
+      "Room Database",
+      "API Integration"
+    ]
+  },
+  {
+    slug: "asp-net-csharp",
+    categorySlug: "software-courses",
+    name: "ASP.NET with C#",
+    desc: "Microsoft Web Development",
+    details: "Build enterprise web applications using C#, ASP.NET Core, Entity Framework, and Web APIs.",
+    duration: "3 Months",
+    cat: "Software Development",
+    image: imgDataScience,
+    learns: [
+      "C# Programming",
+      "ASP.NET Core",
+      "MVC Architecture",
+      "Entity Framework Core",
+      "Web APIs",
+      "Authentication & Security"
+    ]
+  },
+  {
+    slug: "plc-scada",
+    categorySlug: "industrial-automation",
+    name: "PLC & SCADA",
+    desc: "Programmable Logic Controllers and Supervisory Control",
+    details: "Equips students with the practical skills needed to design, program, and maintain automated industrial systems using PLCs and SCADA software.",
+    duration: "2.5 Months",
+    cat: "Industrial Automation",
+    image: imgPython,
+    learns: [
+      "Introduction to Industrial Automation",
+      "PLC Hardware and Architecture",
+      "Ladder Logic Programming Basics",
+      "Advanced PLC Instructions and Timers",
+      "SCADA System Design and Configuration",
+      "HMI (Human-Machine Interface) Integration"
+    ]
+  },
+  {
+    slug: "electrical-power-system-analysis",
+    categorySlug: "industrial-automation",
+    name: "Electrical Power System Analysis",
+    desc: "Modeling and Simulation of Power Grids",
+    details: "Focuses on the theoretical and practical aspects of analyzing electrical power systems, including fault analysis, load flow, and stability studies.",
+    duration: "2 Months",
+    cat: "Industrial Automation",
+    image: imgPython,
+    learns: [
+      "Power System Components Modeling",
+      "Load Flow Analysis (Newton-Raphson & Gauss-Seidel)",
+      "Symmetrical and Unsymmetrical Fault Analysis",
+      "Transient Stability Studies",
+      "Power System Simulation using ETAP & MATLAB",
+      "Protection Coordination Basics"
+    ]
+  },
+  {
+    slug: "matlab-computing",
+    categorySlug: "electronic-design-automation",
+    name: "MATLAB",
+    desc: "Technical Computing and Simulation",
+    details: "Learn to utilize MATLAB for mathematical computation, algorithm development, data analysis, and system simulation across various engineering disciplines.",
+    duration: "1.5 Months",
+    cat: "Electronic Design Automation",
+    image: imgPython,
+    learns: [
+      "MATLAB Workspace and Syntax",
+      "Matrix and Array Operations",
+      "Data Visualization (2D & 3D Plotting)",
+      "Programming Scripts and Functions",
+      "Introduction to Simulink",
+      "Solving Ordinary Differential Equations"
+    ]
+  },
+  {
+    slug: "microcontroller-fundamentals",
+    categorySlug: "electronic-design-automation",
+    name: "Microcontroller",
+    desc: "Embedded Systems Fundamentals",
+    details: "Gain a solid foundation in embedded systems by learning the architecture, programming, and interfacing of microcontrollers such as 8051 and PIC.",
+    duration: "2 Months",
+    cat: "Electronic Design Automation",
+    image: imgPython,
+    learns: [
+      "Microcontroller Architecture",
+      "Embedded C Programming",
+      "I/O Port Programming",
+      "Timers and Counters",
+      "Interrupt Handling",
+      "LED, LCD & Keypad Interfacing"
+    ]
+  },
+  {
+    slug: "advanced-microcontroller",
+    categorySlug: "electronic-design-automation",
+    name: "Advanced Microcontroller",
+    desc: "ARM Cortex and Advanced Embedded Systems",
+    details: "Master advanced ARM Cortex microcontrollers, real-time operating systems (RTOS), communication protocols, and embedded IoT application development.",
+    duration: "2.5 Months",
+    cat: "Electronic Design Automation",
+    image: imgPython,
+    learns: [
+      "ARM Cortex Architecture",
+      "ADC, DAC & PWM Configuration",
+      "I2C, SPI, UART & CAN Protocols",
+      "Introduction to RTOS",
+      "Task Scheduling and Resource Management",
+      "IoT Application Development"
+    ]
+  },
+  {
+    slug: "data-science",
+    categorySlug: "special-programs",
+    name: "Data Science",
+    desc: "Comprehensive Data Analysis & Modeling",
+    details: "Learn the complete data science lifecycle, including data collection, analysis, visualization, statistical modeling, and predictive analytics.",
+    duration: "3 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Data Exploration & Preprocessing",
+      "Statistical Analysis",
+      "Data Visualization",
+      "Predictive Modeling",
+      "Model Evaluation",
+      "Data Storytelling"
+    ]
+  },
+  {
+    slug: "data-science-data-engineering-using-python",
+    categorySlug: "special-programs",
+    name: "Data Science & Data Engineering using Python",
+    desc: "Building Scalable Data Solutions",
+    details: "Master data science and engineering using Python, including data pipelines, ETL processes, databases, and model deployment.",
+    duration: "4 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Python for Data Science",
+      "Pandas & NumPy",
+      "ETL Processes",
+      "SQL & NoSQL Databases",
+      "Data Pipelines",
+      "Model Deployment"
+    ]
+  },
+  {
+    slug: "data-science-using-r",
+    categorySlug: "special-programs",
+    name: "Data Science using R",
+    desc: "Statistical Computing & Visualization",
+    details: "Learn statistical computing, data visualization, and predictive modeling using the R programming language.",
+    duration: "2.5 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "R Programming",
+      "Data Manipulation",
+      "ggplot2 Visualization",
+      "Statistical Modeling",
+      "Time Series Analysis",
+      "R Markdown"
+    ]
+  },
+  {
+    slug: "data-analytics-using-power-bi",
+    categorySlug: "special-programs",
+    name: "Data Analytics using Power BI",
+    desc: "Business Intelligence & Reporting",
+    details: "Transform raw data into interactive dashboards and business insights using Microsoft Power BI.",
+    duration: "1.5 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Data Sources",
+      "Power Query",
+      "Data Modeling",
+      "DAX Expressions",
+      "Interactive Dashboards",
+      "Power BI Service"
+    ]
+  },
+  {
+    slug: "machine-learning",
+    categorySlug: "special-programs",
+    name: "Machine Learning",
+    desc: "Algorithms & Predictive Analytics",
+    details: "Understand machine learning algorithms and build predictive models using real-world datasets.",
+    duration: "3 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Supervised Learning",
+      "Unsupervised Learning",
+      "Ensemble Methods",
+      "Hyperparameter Tuning",
+      "Feature Engineering",
+      "Model Evaluation"
+    ]
+  },
+  {
+    slug: "machine-learning-using-python",
+    categorySlug: "special-programs",
+    name: "Machine Learning using Python",
+    desc: "Applied Machine Learning",
+    details: "Build and deploy machine learning models using Python and Scikit-Learn.",
+    duration: "2.5 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Scikit-Learn",
+      "Regression",
+      "Classification",
+      "Clustering",
+      "ML Pipelines",
+      "Performance Evaluation"
+    ]
+  },
+  {
+    slug: "machine-learning-using-r",
+    categorySlug: "special-programs",
+    name: "Machine Learning using R",
+    desc: "Statistical Machine Learning",
+    details: "Implement machine learning algorithms using R with powerful statistical libraries.",
+    duration: "2.5 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "ML Packages in R",
+      "Regression",
+      "Decision Trees",
+      "Random Forest",
+      "Cross Validation",
+      "Model Interpretation"
+    ]
+  },
+  {
+    slug: "blockchain",
+    categorySlug: "special-programs",
+    name: "Blockchain",
+    desc: "Decentralized Ledger Technology",
+    details: "Learn blockchain architecture, smart contracts, Ethereum, Solidity, and decentralized application development.",
+    duration: "3 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Blockchain Basics",
+      "Cryptography",
+      "Consensus Mechanisms",
+      "Ethereum",
+      "Solidity",
+      "DApp Development"
+    ]
+  },
+  {
+    slug: "artificial-intelligence",
+    categorySlug: "special-programs",
+    name: "Artificial Intelligence",
+    desc: "AI & Deep Learning",
+    details: "Explore Artificial Intelligence, neural networks, deep learning, computer vision, and NLP fundamentals.",
+    duration: "4 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Neural Networks",
+      "Deep Learning",
+      "TensorFlow / PyTorch",
+      "Computer Vision",
+      "Natural Language Processing",
+      "AI Applications"
+    ]
+  },
+  {
+    slug: "robotic-process-automation",
+    categorySlug: "special-programs",
+    name: "Robotic Process Automation (RPA)",
+    desc: "Business Process Automation",
+    details: "Automate repetitive business processes using industry-leading RPA platforms such as UiPath and Automation Anywhere.",
+    duration: "2 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "RPA Fundamentals",
+      "UiPath",
+      "Automation Anywhere",
+      "Workflow Automation",
+      "Exception Handling",
+      "Bot Deployment"
+    ]
+  },
+  {
+    slug: "robotics",
+    categorySlug: "special-programs",
+    name: "Robotics",
+    desc: "Robotics & Control Systems",
+    details: "Learn robotics design, sensors, actuators, embedded systems, and autonomous robot programming.",
+    duration: "3.5 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "Robot Kinematics",
+      "Sensors & Actuators",
+      "Arduino & Raspberry Pi",
+      "ROS Basics",
+      "Motor Control",
+      "Autonomous Navigation"
+    ]
+  },
+  {
+    slug: "internet-of-things",
+    categorySlug: "special-programs",
+    name: "Internet of Things (IoT)",
+    desc: "Smart Connected Devices",
+    details: "Build IoT solutions by connecting sensors, devices, cloud platforms, and real-time data analytics.",
+    duration: "3 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "IoT Architecture",
+      "MQTT & CoAP",
+      "Sensors & Microcontrollers",
+      "Cloud Integration",
+      "Data Analytics",
+      "IoT Security"
+    ]
+  },
+  {
+    slug: "complete-guide-to-nlp-chatgpt",
+    categorySlug: "special-programs",
+    name: "Complete Guide to NLP & ChatGPT",
+    desc: "Generative AI & Prompt Engineering",
+    details: "Master NLP concepts, prompt engineering, OpenAI APIs, and AI chatbot development using modern LLMs.",
+    duration: "2 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "NLP Fundamentals",
+      "Transformer Models",
+      "OpenAI API",
+      "Prompt Engineering",
+      "Fine-Tuning Concepts",
+      "AI Chatbot Development"
+    ]
+  },
+  {
+    slug: "fundamentals-of-additive-manufacturing",
+    categorySlug: "special-programs",
+    name: "Fundamentals of Additive Manufacturing using 3D Printing",
+    desc: "3D Printing Technologies",
+    details: "Understand additive manufacturing processes, CAD workflows, slicing software, materials, and printer operation.",
+    duration: "1.5 Months",
+    cat: "Special Programs",
+    image: imgDataScience,
+    learns: [
+      "3D Printing Technologies",
+      "Materials & Properties",
+      "CAD for 3D Printing",
+      "Slicing Software",
+      "Printer Operation",
+      "Post-Processing"
+    ]
+  },
   {
     slug: "Design Visualization Essential", categorySlug: "civil-courses", name: "Design Visualization Essential", desc: "Part modeling, assembly & drafting.", duration: "3 Months", cat: "Mech", image: imgMech,
     details: "Focuses on using mathematical and programming tools to create dynamic 3D designs, structuring the entire architectural design workflow. This course bridges the gap between pure raw creative concept and structural geometry.",
@@ -1899,11 +2409,15 @@ export const galleryImages = [
 ];
 
 export const testimonialsData = [
-  { name: "Aravind P.", course: "AutoCAD + Revit", text: " CADDXPERT changed my career. The trainers explain every concept practically, and I got placed within a month of finishing my course.", rating: 5 },
-  { name: "Meena R.", course: "Full Stack Development", text: "Loved the live projects and one-on-one mentorship. The placement team helped me crack my first developer interview.", rating: 5 },
-  { name: "Vignesh S.", course: "CATIA", text: "Best institute in Tiruvarur for mechanical CAD. Industry-grade labs and friendly faculty. Highly recommended!", rating: 5 },
-  { name: "Lakshmi K.", course: "Python + Data Science", text: "Hands-on training with real datasets. I now work as a data analyst thanks to CADPOINT's career support.", rating: 5 },
-  { name: "Rohit V.", course: "Java Full Stack", text: "The curriculum is very up-to-date with current industry standards. The mock interviews were especially helpful.", rating: 5 },
+  { name: "ABISHEK KARUPPIAH", course: "AutoCAD 2D & 3D", text: "xcellent training centre with experienced trainers and practical learning. The AutoCAD 2D & 3D course was well structured and helped me gain strong drafting and 3D modeling skills.", rating: 5, link: "https://share.google/dfmB2EW9XbaOrhgIZ" },
+  { name: "RISHI", course: "Practical Training", text: "They provide excellent service and good coaching. The training was well structured, practical, and easy to understand.", rating: 5, link: "https://share.google/4aI2g12iPeE9fdtSQ" },
+  { name: "Muhammed Sirajudeen", course: "Beginner Course", text: "I joined as a beginner, but the trainers and staff guided me patiently at every step. Their support and clear explanations helped me learn confidently and improve my skills.", rating: 4, link: "https://share.google/yeeBfNM8jP7k5Tf8n" },
+  { name: "Sooriya Narain Gopalkrishna", course: "VR & AR Workshop", text: "The VR & AR workshop was highly informative and helped me learn many new concepts with practical exposure.", rating: 5, link: "https://share.google/s4vi0tHEGJLnvzfuW" },
+  { name: "J. Shrikiruthika", course: "Java", text: "I'm doing my Java course in this centre. The teaching methodology is excellent, and after every topic we receive practical projects that help improve our coding skills and confidence.", rating: 5, link: "https://share.google/rUwuvYnHlnP5eEML9" },
+  { name: "Kamaleswar Sivasankaran", course: "Java & Web Development", text: "Recently completed Java and Web Development courses here. The trainers are highly experienced, the curriculum is well structured, and the institute provides excellent guidance with practical learning.", rating: 5, link: "https://share.google/6Dc26T9oqQuRHTxrF" },
+  { name: "Saroj Kumar Ramesh", course: "Training Workshop", text: "This workshop was very useful and provided valuable practical knowledge. I really enjoyed the learning experience.", rating: 5, link: "https://share.google/2pXZFCkXGf4vIrS1h" },
+  { name: "Tharik Ahamed", course: "E3D Software", text: "A great place to learn design software. I successfully completed my E3D software training with excellent support from the trainers.", rating: 5, link: "https://share.google/tS9t2qgBleIdgZPEL" },
+  { name: "Sneha Sneha", course: "3D Visualization", text: "This course helped me understand 3D visualization from the basics. The mentors explained every concept clearly, making learning simple and effective.", rating: 5, link: "https://share.google/2AdU94mOylIi2UlDl" }
 ];
 
 export const subCourseMap: Record<string, string[]> = courseCategories.reduce((acc, category) => {

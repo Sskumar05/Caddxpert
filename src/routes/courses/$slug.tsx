@@ -50,9 +50,9 @@ function CourseDetailsPage() {
                 <h1 className="text-4xl md:text-5xl font-extrabold text-charcoal leading-tight">
                   {course.name}
                 </h1>
-                <p className="mt-4 text-xl text-muted-foreground">
+                {/* <p className="mt-4 text-xl text-muted-foreground">
                   {course.desc}
-                </p>
+                </p> */}
               </div>
 
               <div data-aos="fade-up" data-aos-delay="100" className="prose prose-lg max-w-none text-foreground/80">
@@ -108,13 +108,13 @@ function CourseDetailsPage() {
             <div className="lg:col-span-1" data-aos="fade-left">
               <div className="card-soft p-6 sticky top-28 group">
                 <div className="h-40 rounded-xl mb-6 flex items-center justify-center relative overflow-hidden">
-                  <img
+                  {/* <img
                     src={course.image}
                     alt={course.name}
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-charcoal/60 transition-opacity duration-500 group-hover:bg-charcoal/40" />
-                  <span className="relative font-display text-2xl md:text-3xl font-extrabold text-white drop-shadow-md text-center px-4 z-10">
+                  /> */}
+                  <div className="absolute inset-0 bg-black/80 transition-opacity duration-500 " />
+                  <span className="relative font-display text-2xl md:text-2xl font-extrabold text-white drop-shadow-md text-center px-4 z-10">
                     {course.name}
                   </span>
                 </div>

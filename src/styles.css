@@ -146,3 +146,8 @@
   transition: transform .3s ease, box-shadow .3s ease;
   &:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); }
 }
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
