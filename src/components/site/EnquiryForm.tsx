@@ -22,20 +22,28 @@ const courseOptions = [
 "Digital Marketing",
 ];
 
-export function EnquiryForm({ hideHeading }: { hideHeading?: boolean }) {
+export function EnquiryForm({ hideHeading, initialDomain, initialCourse }: { hideHeading?: boolean, initialDomain?: string, initialCourse?: string }) {
   const [sent, setSent] = useState(false);
   const router = useRouter();
   
   const { register, handleSubmit, reset, watch, setValue, formState: { errors, isSubmitting } } =
     useForm<EnquiryInput>({
-      resolver: zodResolver(enquirySchema)
+      resolver: zodResolver(enquirySchema),
+      defaultValues: {
+        course: initialDomain || "",
+        subCourse: initialCourse || "",
+      }
     });
 
   const selectedCourse = watch("course");
+  const [previousDomain, setPreviousDomain] = useState(initialDomain || "");
 
   useEffect(() => {
-    setValue("subCourse", "");
-  }, [selectedCourse, setValue]);
+    if (selectedCourse !== previousDomain) {
+      setValue("subCourse", "");
+      setPreviousDomain(selectedCourse);
+    }
+  }, [selectedCourse, previousDomain, setValue]);
 
   const onSubmit = async (data: EnquiryInput) => {
     try {

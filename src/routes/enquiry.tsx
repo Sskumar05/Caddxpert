@@ -5,8 +5,13 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { PageWrapper } from "@/components/site/PageWrapper";
 import { Breadcrumb } from "@/components/site/Breadcrumb";
 import { EnquiryForm } from "@/components/site/EnquiryForm";
+import { z } from "zod";
 
 export const Route = createFileRoute("/enquiry")({
+  validateSearch: z.object({
+    domain: z.string().optional(),
+    course: z.string().optional(),
+  }),
   head: () => ({
     meta: [
       { title: "Enquiry Form | CADD XPERT Tiruvarur" },
@@ -17,6 +22,8 @@ export const Route = createFileRoute("/enquiry")({
 });
 
 function EnquiryPage() {
+  const { domain, course } = Route.useSearch();
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navbar />
@@ -36,7 +43,7 @@ function EnquiryPage() {
             </div>
 
             <div className="card-soft p-8 md:p-12 shadow-xl" data-aos="zoom-in">
-              <EnquiryForm hideHeading />
+              <EnquiryForm hideHeading initialDomain={domain} initialCourse={course} />
             </div>
           </div>
         </div>

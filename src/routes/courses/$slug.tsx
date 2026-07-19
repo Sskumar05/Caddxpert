@@ -5,7 +5,7 @@ import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { PageWrapper } from "@/components/site/PageWrapper";
 import { Breadcrumb } from "@/components/site/Breadcrumb";
 import { Clock, CheckCircle2, ArrowRight } from "lucide-react";
-import { courses } from "@/lib/data";
+import { courses, courseCategories } from "@/lib/data";
 
 export const Route = createFileRoute("/courses/$slug")({
   head: ({ params }) => {
@@ -23,6 +23,7 @@ export const Route = createFileRoute("/courses/$slug")({
 function CourseDetailsPage() {
   const { slug } = Route.useParams();
   const course = courses.find((c) => c.slug === slug);
+  const category = courseCategories.find((c) => c.slug === course?.categorySlug);
 
   if (!course) {
     return (
@@ -59,19 +60,48 @@ function CourseDetailsPage() {
                 <p>{course.details}</p>
                 
                 <h3 className="text-2xl font-bold text-charcoal mt-8">What You Will Learn</h3>
-                <ul className="space-y-3 mt-4">
-                  {(course.learns ?? [
-                    "Industry-standard tools and techniques",
-                    "Practical hands-on project experience",
-                    "Real-world application and problem solving",
-                    "Preparation for certification and employment"
-                  ]).map((item, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="h-6 w-6 text-brand-red flex-shrink-0" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                {course.modules && course.modules.length > 0 ? (
+                  <div className="mt-4 space-y-6">
+                    {course.modules.map((module, idx) => (
+                      <div key={idx}>
+                        <h4 className="text-xl font-bold text-charcoal flex items-center gap-2 mb-3">
+                          <span className="text-brand-red">📘</span> {module.title}
+                        </h4>
+                        <ul className="space-y-3">
+                          {module.learns?.map((item, i) => (
+                            <li key={i} className="flex items-start gap-3">
+                              <CheckCircle2 className="h-6 w-6 text-brand-red flex-shrink-0" />
+                              <span>{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ) : course.learns && course.learns.length > 0 ? (
+                  <ul className="space-y-3 mt-4">
+                    {course.learns.map((item, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2 className="h-6 w-6 text-brand-red flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <ul className="space-y-3 mt-4">
+                    {[
+                      "Industry-standard tools and techniques",
+                      "Practical hands-on project experience",
+                      "Real-world application and problem solving",
+                      "Preparation for certification and employment"
+                    ].map((item, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <CheckCircle2 className="h-6 w-6 text-brand-red flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
 
@@ -106,7 +136,11 @@ function CourseDetailsPage() {
                   </div>
                 </div>
 
-                <Link to="/enquiry" className="btn-primary w-full justify-center">
+                <Link 
+                  to="/enquiry" 
+                  search={{ domain: category?.name, course: course.name }}
+                  className="btn-primary w-full justify-center"
+                >
                   Enquire Now <ArrowRight className="h-4 w-4 ml-2" />
                 </Link>
               </div>

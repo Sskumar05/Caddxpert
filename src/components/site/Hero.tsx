@@ -18,7 +18,7 @@ export function Hero() {
           transition={{ duration: 0.7, ease: "easeOut" }}
         >
           <span className="eyebrow flex items-center gap-2 w-[60%]">
-            <img className="h-6 w-6 object-contain" src={cadlogo} alt="" />
+            <img className="h-6 w-6 object-contain" src={cadlogo} />
             Courses Powered By Cadpoint
           </span>
           <h1 className="mt-5 font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-charcoal leading-[1.05]">

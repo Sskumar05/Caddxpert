@@ -63,7 +63,7 @@ export const submitEnquiry = createServerFn({ method: "POST" })
           // Send to Admin
           await resend.emails.send({
             from: `CADPOINT Enquiries <${RESEND_FROM_EMAIL}>`,
-            to: ["cadpointthiruvarur@gmail.com"], // Using the email from the contact page
+            to: ["sshathiskumar54@gmail.com"], // Using the email from the contact page
             subject: `New Course Enquiry: ${data.name} - ${data.course}`,
             html: `
               <h2>New Student Enquiry</h2>

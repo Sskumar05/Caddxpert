@@ -1,12 +1,13 @@
 import { Compass, Facebook, Instagram, Youtube, Linkedin, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import logoImg from "@/assets/logo-removebg-preview.png";
+import { courseCategories } from "@/lib/data";
 
 export function Footer() {
   return (
     <footer id="about" className="bg-charcoal text-charcoal-foreground pt-16 pb-8">
-      <div className="container-x grid md:grid-cols-2 lg:grid-cols-4 gap-10">
-        <div>
+      <div className="container-x grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-10">
+        <div className="col-span-2 md:col-span-1">
           <div className="flex items-center gap-2">
             <span className="inline-flex h-15 w-15 rounded-full bg-white">
               <img src={logoImg} alt="Logo" className="h-10 w-15 sm:h-12 sm:w-15 object-contain m-auto pl-1 ml-[-2px]" />
@@ -17,7 +18,7 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-4 text-sm text-white/70 leading-relaxed">
-            Premier CAD & IT training institute in Tiruvarur, building industry-ready professionals since 2010.
+            Caddxpert AI Innovations provides industry-focused CAD, Engineering, IT, and AI training with practical learning, expert guidance, and placement support.
           </p>
           <div className="mt-5 flex gap-3">
             <a href="https://www.facebook.com/CADDTVR" className="h-9 w-9 rounded-full bg-white/10 hover:bg-brand-red flex items-center justify-center transition-colors" aria-label="Facebook">
@@ -51,20 +52,21 @@ export function Footer() {
         <div>
           <h4 className="font-bold text-base">Popular Courses</h4>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
-            {["autocad", "revit-architecture", "staad-pro", "catia", "solidworks", "full-stack-development", "python-programming", "data-science"].map((slug) => {
-              const names: Record<string, string> = {
-                "autocad": "AutoCAD", "revit-architecture": "Revit", "staad-pro": "STAAD Pro",
-                "catia": "CATIA", "solidworks": "SolidWorks", "full-stack-development": "Full Stack",
-                "python-programming": "Python", "data-science": "Data Science"
-              };
-              return (
-                <li key={slug}><Link to="/courses/$slug" params={{ slug }} className="hover:text-brand-red transition-colors">{names[slug]}</Link></li>
-              );
-            })}
+            {courseCategories.map((category) => (
+              <li key={category.slug}>
+                <Link 
+                  to="/courses/category/$categorySlug" 
+                  params={{ categorySlug: category.slug }} 
+                  className="hover:text-brand-red transition-colors"
+                >
+                  {category.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
-        <div>
+        <div className="col-span-2 md:col-span-1">
           <h4 className="font-bold text-base">Contact</h4>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
             <li className="flex gap-3"><MapPin className="h-4 w-4 mt-0.5 text-brand-red flex-shrink-0" /> 21/2, Durgalaya Rd, Madappuram, Thiruvarur, Tamil Nadu 610001 </li>
