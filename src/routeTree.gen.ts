@@ -11,6 +11,8 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ThankYouRouteImport } from './routes/thank-you'
 import { Route as TestimonialsRouteImport } from './routes/testimonials'
+import { Route as TermsOfServiceRouteImport } from './routes/terms-of-service'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PlacementsRouteImport } from './routes/placements'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as EnquiryRouteImport } from './routes/enquiry'
@@ -29,6 +31,16 @@ const ThankYouRoute = ThankYouRouteImport.update({
 const TestimonialsRoute = TestimonialsRouteImport.update({
   id: '/testimonials',
   path: '/testimonials',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsOfServiceRoute = TermsOfServiceRouteImport.update({
+  id: '/terms-of-service',
+  path: '/terms-of-service',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PlacementsRoute = PlacementsRouteImport.update({
@@ -85,6 +97,8 @@ export interface FileRoutesByFullPath {
   '/enquiry': typeof EnquiryRoute
   '/gallery': typeof GalleryRoute
   '/placements': typeof PlacementsRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
   '/courses/$slug': typeof CoursesSlugRoute
@@ -98,6 +112,8 @@ export interface FileRoutesByTo {
   '/enquiry': typeof EnquiryRoute
   '/gallery': typeof GalleryRoute
   '/placements': typeof PlacementsRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
   '/courses/$slug': typeof CoursesSlugRoute
@@ -112,6 +128,8 @@ export interface FileRoutesById {
   '/enquiry': typeof EnquiryRoute
   '/gallery': typeof GalleryRoute
   '/placements': typeof PlacementsRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/terms-of-service': typeof TermsOfServiceRoute
   '/testimonials': typeof TestimonialsRoute
   '/thank-you': typeof ThankYouRoute
   '/courses/$slug': typeof CoursesSlugRoute
@@ -127,6 +145,8 @@ export interface FileRouteTypes {
     | '/enquiry'
     | '/gallery'
     | '/placements'
+    | '/privacy-policy'
+    | '/terms-of-service'
     | '/testimonials'
     | '/thank-you'
     | '/courses/$slug'
@@ -140,6 +160,8 @@ export interface FileRouteTypes {
     | '/enquiry'
     | '/gallery'
     | '/placements'
+    | '/privacy-policy'
+    | '/terms-of-service'
     | '/testimonials'
     | '/thank-you'
     | '/courses/$slug'
@@ -153,6 +175,8 @@ export interface FileRouteTypes {
     | '/enquiry'
     | '/gallery'
     | '/placements'
+    | '/privacy-policy'
+    | '/terms-of-service'
     | '/testimonials'
     | '/thank-you'
     | '/courses/$slug'
@@ -167,6 +191,8 @@ export interface RootRouteChildren {
   EnquiryRoute: typeof EnquiryRoute
   GalleryRoute: typeof GalleryRoute
   PlacementsRoute: typeof PlacementsRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  TermsOfServiceRoute: typeof TermsOfServiceRoute
   TestimonialsRoute: typeof TestimonialsRoute
   ThankYouRoute: typeof ThankYouRoute
   CoursesSlugRoute: typeof CoursesSlugRoute
@@ -188,6 +214,20 @@ declare module '@tanstack/react-router' {
       path: '/testimonials'
       fullPath: '/testimonials'
       preLoaderRoute: typeof TestimonialsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms-of-service': {
+      id: '/terms-of-service'
+      path: '/terms-of-service'
+      fullPath: '/terms-of-service'
+      preLoaderRoute: typeof TermsOfServiceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/placements': {
@@ -263,6 +303,8 @@ const rootRouteChildren: RootRouteChildren = {
   EnquiryRoute: EnquiryRoute,
   GalleryRoute: GalleryRoute,
   PlacementsRoute: PlacementsRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  TermsOfServiceRoute: TermsOfServiceRoute,
   TestimonialsRoute: TestimonialsRoute,
   ThankYouRoute: ThankYouRoute,
   CoursesSlugRoute: CoursesSlugRoute,

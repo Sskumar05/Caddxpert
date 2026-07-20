@@ -18,9 +18,9 @@ export function Courses({ limit }: { limit?: number }) {
               Choose from CAD, civil, mechanical, electrical and IT courses — all with certificates and placement support.
             </p>
           </div>
-          <Link to="/courses" className="btn-outline self-start md:self-end" data-aos="fade-left">
+          {/* <Link to="/courses" className="btn-outline self-start md:self-end" data-aos="fade-left">
             View All Courses <ArrowRight className="h-4 w-4" />
-          </Link>
+          </Link> */}
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">

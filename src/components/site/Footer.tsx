@@ -108,9 +108,18 @@ export function Footer() {
       <div className="container-x mt-12 pt-6 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3 text-xs text-white/60">
         <div>© {new Date().getFullYear()} CADD<span className="text-white/60 text-sm">X</span>PERT AI SOLUTIONS Tiruvarur. All rights reserved.</div>
         <div className="flex gap-5">
-          <a href="#" className="hover:text-white">Privacy Policy</a>
-          <a href="#" className="hover:text-white">Terms of Service</a>
+          <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+          <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
         </div>
+      </div>
+      <div className="container-x pb-6 pt-3 text-center text-xs text-white/40 ml-[-20%] mr-[23%]">
+        Developed by{" "}
+        <a
+          href="https://infynuxsolutions.in/"
+          className="font-semibold text-red-500 hover:text-red-500 transition-colors duration-300"
+        >
+          INFYNUX SOLUTIONS
+        </a>
       </div>
     </footer>
   );
