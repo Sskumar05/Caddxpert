@@ -568,7 +568,7 @@ export const courses: Course[] = [
     ]
   },
   {
-    slug: "Design Visualization Essential", categorySlug: "civil-courses", name: "Design Visualization Essential", desc: "Part modeling, assembly & drafting.", duration: "3 Months", cat: "Mech", image: imgMech,
+    slug: "Design Visualization Essential", categorySlug: "civil-courses", name: "Design Visualization Essential", desc: "Creates dynamic 3D designs.", duration: "3 Months", cat: "Mech", image: imgMech,
     details: "Focuses on using mathematical and programming tools to create dynamic 3D designs, structuring the entire architectural design workflow. This course bridges the gap between pure raw creative concept and structural geometry.",
     learns: [
       "Geometric Primitives",
@@ -585,7 +585,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "V-Ray Essential", categorySlug: "civil-courses", name: "V-Ray Essential", desc: "Advanced surface & product design.", duration: "3 Months", cat: "Mech", image: imgCatia,
+    slug: "V-Ray Essential", categorySlug: "civil-courses", name: "V-Ray Essential", desc: "Generates realistic rendered images.", duration: "3 Months", cat: "Mech", image: imgCatia,
     details: "Teaches you how to transform 3D models into highly realistic rendered images for advanced surface and product design. It teaches you master-level lighting, texture mapping, and material reflections for photo-realistic client presentations.",
     learns: [
       "V-Ray Rendering Engines",
@@ -602,7 +602,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SketchUp Essential", categorySlug: "civil-courses", name: "SketchUp Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "SketchUp Essential", categorySlug: "civil-courses", name: "SketchUp Essential", desc: "Visualizes basic building concepts.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Helps you easily turn basic architectural concepts into 3D models to quickly visualize building ideas. An excellent beginner-friendly tool for rapid prototyping and generating quick structural spatial layouts.",
     learns: [
       "Inference Techniques",
@@ -619,7 +619,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Revit Architecture Essential", categorySlug: "civil-courses", name: "Revit Architecture Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Revit Architecture Essential", categorySlug: "civil-courses", name: "Revit Architecture Essential", desc: "Builds precise BIM models.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Uses Building Information Modeling (BIM) to generate highly accurate 3D architectural models and detailed blueprints. It streamlines collaboration by updating floor plans, elevations, and sections automatically as you build.",
     learns: [
       "Project workflow",
@@ -636,7 +636,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "STAAD .Pro Essential", categorySlug: "civil-courses", name: "STAAD .Pro Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "STAAD .Pro Essential", categorySlug: "civil-courses", name: "STAAD .Pro Essential", desc: "Tests structural load safety.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A core engineering software used to test, analyze, and verify the load-bearing capacity and safety of buildings and steel structures. Essential for structural engineers to perform finite element analysis and ensure concrete/steel building safety codes.",
     learns: [
       "STAAD Editor",
@@ -653,7 +653,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Construction Management using MSP", categorySlug: "civil-courses", name: "Construction Management using MSP", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Construction Management using MSP", categorySlug: "civil-courses", name: "Construction Management using MSP", desc: "Manages site project timelines.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Focuses on using Microsoft Project to handle high-level project scheduling, timeline tracking, and resource management. Helps site engineers control critical paths, allocate workforce efficiently, and track project delay margins.",
     learns: [
       "STAAD Editor",
@@ -670,7 +670,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Max for Engineers/Architects Essential", categorySlug: "civil-courses", name: "Max for Engineers/Architects Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Max for Engineers/Architects Essential", categorySlug: "civil-courses", name: "Max for Engineers/Architects Essential", desc: "Builds cinematic 3D walkthroughs.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A specialized visualization software used to build heavy high-end 3D walkthrough animations and components. Ideal for creating cinematic walkthroughs and high-fidelity promotional media for premium real estate developments.",
     learns: [
       "Standard Shapes",
@@ -687,7 +687,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "ETABS Essential", categorySlug: "civil-courses", name: "ETABS Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "ETABS Essential", categorySlug: "civil-courses", name: "ETABS Essential", desc: "Analyzes high-rise building safety.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Used for the advanced structural analysis, design calculation, and safety auditing of multi-story buildings. Widely recognized as the industry-standard software for seismic analysis and wind-load calculations on high-rise structures.",
     learns: [
       "Modeling of Building Structure",
@@ -704,7 +704,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "MSP with PPM Concepts Essential", categorySlug: "civil-courses", name: "MSP with PPM Concepts Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "MSP with PPM Concepts Essential", categorySlug: "civil-courses", name: "MSP with PPM Concepts Essential", desc: "Manages multi-project corporate portfolios.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Combines Microsoft Project with Project Portfolio Management concepts to track and manage multiple large projects at the same time. Enables executive managers to prioritize project budgets and share resources across multiple corporate infrastructure contracts.",
     learns: [
       "Project management framework",
@@ -721,7 +721,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Building Estimation and Costing with Simulation", categorySlug: "civil-courses", name: "Building Estimation and Costing with Simulation", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Building Estimation and Costing with Simulation", categorySlug: "civil-courses", name: "Building Estimation and Costing with Simulation", desc: "Estimates precise construction budgets.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Uses computational simulations to accurately estimate material quantities and calculate the total budget of a construction project. Provides precision metrics to reduce material wastage and draft highly competitive contract tender proposals.",
     learns: [
       "Reviewing the model",
@@ -737,7 +737,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "ProSteel Essential", categorySlug: "civil-courses", name: "ProSteel Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "ProSteel Essential", categorySlug: "civil-courses", name: "ProSteel Essential", desc: "Designs heavy steel structures.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "An engineering software used for designing heavy structural steel layouts, connection detailing, and 3D steel structures. Perfect for detailing complex steel structures like industrial warehouses, communication towers, and heavy manufacturing plants.",
     learns: [
       "Shapes",
@@ -753,7 +753,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Ansys Civil Essential", categorySlug: "civil-courses", name: "Ansys Civil Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Ansys Civil Essential", categorySlug: "civil-courses", name: "Ansys Civil Essential", desc: "Predicts concrete structural stress.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A mathematical simulation software used to precisely predict stress, strain, and structural load limits in complex concrete setups. Allows engineers to simulate heavy structural failures and concrete stress distribution under extreme pressure variations.",
     learns: [
       "Modeling in ANSYS",
@@ -770,7 +770,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "AECOsim Essential", categorySlug: "civil-courses", name: "AECOsim Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "AECOsim Essential", categorySlug: "civil-courses", name: "AECOsim Essential", desc: "Unifies multi-disciplinary BIM designs.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A BIM-centric platform that allows structural, architectural, and mechanical engineering teams to design and execute works on a single digital space. Reduces multi-disciplinary drafting conflicts by tracking shared structural data points in real-time.",
     learns: [
       "Placing 2D Elements",
@@ -786,7 +786,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "AutoCAD Civil 3D Essential", categorySlug: "civil-courses", name: "AutoCAD Civil 3D Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "AutoCAD Civil 3D Essential", categorySlug: "civil-courses", name: "AutoCAD Civil 3D Essential", desc: "Designs roads and infrastructure.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "An industry-standard software for land development, surveying, road design, and infrastructure engineering analysis. Empowers civil engineers to design precision corridor models, grading patterns, and gravity pipe network alignments.",
     learns: [
       "Survey Fundamental",
@@ -802,7 +802,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "MicroStation Essential", categorySlug: "civil-courses", name: "MicroStation Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "MicroStation Essential", categorySlug: "civil-courses", name: "MicroStation Essential", desc: "Maps large infrastructure networks.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A precision vector graphics tool used to create massive-scale civil engineering layout drawings and infrastructure models. Trusted worldwide for handling large, complex infrastructure datasets for global-scale utility maps and train track networks.",
     learns: [
       "MicroStation manager",
@@ -819,7 +819,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "MX Road Essential", categorySlug: "civil-courses", name: "MX Road Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "MX Road Essential", categorySlug: "civil-courses", name: "MX Road Essential", desc: "Designs highway alignment geometry.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A specialized string-based modeling system used for the highly precise design of highway alignments and expressway layouts. Crucial for geometric design calculations, earthwork volumetric estimation, and national highway vertical profiles.",
     learns: [
       "Survey inputs and validation",
@@ -835,7 +835,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "RCC Detailing Essential", categorySlug: "civil-courses", name: "RCC Detailing Essential", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "RCC Detailing Essential", categorySlug: "civil-courses", name: "RCC Detailing Essential", desc: "Creates rebar layout drawings.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "A custom tool used to generate reinforcement concrete drawings and visually arrange internal steel bars according to engineering codes. Ensures that structural shop drawings explicitly reflect accurate rebar spacing, laps, and stirrup positions.",
     learns: [
       "Element Creation",
@@ -850,7 +850,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in AutoCAD for Civil Engineers and Architects", categorySlug: "civil-courses", name: "Proficient in AutoCAD for Civil Engineers and Architects", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in AutoCAD for Civil Engineers and Architects", categorySlug: "civil-courses", name: "Proficient in AutoCAD for Civil Engineers and Architects", desc: "Drafts 2D floor blueprints.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Covers everything from drafting basics to advanced 2D layouts and building floor plans. The foundational layout course that trains you to generate cross-sections, structural details, and submission drawings.",
     modules: [
       {
@@ -885,7 +885,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Revit", categorySlug: "civil-courses", name: "Proficient in Revit", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in Revit", categorySlug: "civil-courses", name: "Proficient in Revit", desc: "Advanced BIM 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "An advanced course in Building Information Modeling (BIM) to handle complex 3D architectural models and industrial blueprints. Teaches deep parameter configurations, custom family creations, and cross-platform template integrations.",
     modules: [
       {
@@ -921,7 +921,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in STAAD.Pro", categorySlug: "civil-courses", name: "Proficient in STAAD.Pro", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in STAAD.Pro", categorySlug: "civil-courses", name: "Proficient in STAAD.Pro", desc: "Advanced structural dynamic analysis.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Advanced training in structural analysis, foundation limits, and load testing for multi-story structures. Focuses on complex dynamic analysis, heavy structural foundation designs, and multi-variable frame checking algorithms.",
     modules: [
       {
@@ -955,7 +955,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Primavera for Construction Management", categorySlug: "civil-courses", name: "Proficient in Primavera for Construction Management", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in Primavera for Construction Management", categorySlug: "civil-courses", name: "Proficient in Primavera for Construction Management", desc: "Master enterprise project planning.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "An industry-standard enterprise tool used for master scheduling, budgeting, and risk analysis in massive projects. The definitive standard software credential required for planning major international commercial developments.",
     modules: [
       {
@@ -992,7 +992,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Interior & Architectural Design", categorySlug: "civil-courses", name: "Proficient in Interior & Architectural Design", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in Interior & Architectural Design", categorySlug: "civil-courses", name: "Proficient in Interior & Architectural Design", desc: "Designs aesthetic indoor spaces.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Focuses on interior space planning, architectural layouts, and creating hyper-realistic interior floor plans. Combines space optimization principles with lighting aesthetics to design premium commercial interiors.",
     modules: [
       {
@@ -1029,7 +1029,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Construction Management using Primavera & MSP", categorySlug: "civil-courses", name: "Proficient in Construction Management using Primavera & MSP", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in Construction Management using Primavera & MSP", categorySlug: "civil-courses", name: "Proficient in Construction Management using Primavera & MSP", desc: "Complete project scheduling control.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Combines both top tools to perfectly manage complex resource scheduling and project timelines. Gives you a massive career advantage by enabling you to manage both local tasks and large enterprise schedules.",
     modules: [
       {
@@ -1068,7 +1068,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in 3D BIM", categorySlug: "civil-courses", name: "Proficient in 3D BIM", desc: "Parametric 3D modeling.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
+    slug: "Proficient in 3D BIM", categorySlug: "civil-courses", name: "Proficient in 3D BIM", desc: "Performs spatial clash detection.", duration: "3 Months", cat: "Mech", image: imgSolidworks,
     details: "Focuses on integrating architectural components and spatial coordinate designs into a unified 3D digital building model. Trains you to run comprehensive clash-detection tests to spot physical structural interference early.",
     modules: [
       {
@@ -1105,7 +1105,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in BIM for Transportation Design", categorySlug: "civil-courses", name: "Proficient in BIM for Transportation Design", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in BIM for Transportation Design", categorySlug: "civil-courses", name: "Proficient in BIM for Transportation Design", desc: "Models transit network infrastructure.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A digital framework used to plan and design structural layouts for highways, railways, bridges, and major transit infrastructure. Streamlines massive transit corridors drafting workflows by linking alignment profiles directly to construction estimates.",
     modules: [
       {
@@ -1142,7 +1142,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in BIM for Structural Design", categorySlug: "civil-courses", name: "Proficient in BIM for Structural Design", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in BIM for Structural Design", categorySlug: "civil-courses", name: "Proficient in BIM for Structural Design", desc: "Connects calculations to modeling.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Dedicated to modeling load-bearing concrete/steel skeletons and column layouts inside a digital BIM workspace. Bridges structural design math with physical architectural space modeling for error-free framing fabrication blueprints.",
     modules: [
       {
@@ -1179,7 +1179,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in 5D BIM", categorySlug: "civil-courses", name: "Proficient in 5D BIM", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in 5D BIM", categorySlug: "civil-courses", name: "Proficient in 5D BIM", desc: "Integrates time and cost.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "An advanced engineering simulation that integrates the 3D model and time scheduling (4D) with real-time cost estimation and material budgeting (5D). Provides modern construction estimators with instantaneous cost recalculations as design dimensions change.",
     modules: [
       {
@@ -1219,7 +1219,7 @@ export const courses: Course[] = [
   // Mechanical & Aerospace //
 
   {
-    slug: "GD&T-Essential", categorySlug: "mechanical-courses", name: "GD&T Essential", desc: "2D & 3D drafting for design professionals.", duration: "2 Months", cat: "CAD", image: imgAutocad,
+    slug: "GD&T-Essential", categorySlug: "mechanical-courses", name: "GD&T Essential", desc: "Standardizes manufacturing engineering tolerances.", duration: "2 Months", cat: "CAD", image: imgAutocad,
     details: "Teaches you how to specify exact dimensions and tolerances on engineering drawings to significantly reduce factory production errors. Ensures precision communication between design desks and manufacturing units based on global ASME/ISO standards.",
     learns: [
       "GD & T Rules",
@@ -1236,7 +1236,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Creo Essential", categorySlug: "mechanical-courses", name: "Creo Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Creo Essential", categorySlug: "mechanical-courses", name: "Creo Essential", desc: "Builds 3D parametric assemblies.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A parametric 3D modeling and assembly software heavily used in the automotive and aerospace industries for advanced product design. Teaches robust top-down product assembly logic and high-performance mechanical part configuration rules.",
     learns: [
       "Getting started Creo UI",
@@ -1253,7 +1253,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "NX CAD Essential", categorySlug: "mechanical-courses", name: "NX CAD Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "NX CAD Essential", categorySlug: "mechanical-courses", name: "NX CAD Essential", desc: "Models complex car bodies.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Used in high-end product engineering for advanced surface modeling, component layouts, and detailed engineering drawings. Provides supreme industry-level mastery over complex freeform modeling used in styling modern vehicle bodies.",
     learns: [
       "NX GUI Explore",
@@ -1270,7 +1270,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SolidWorks Essential", categorySlug: "mechanical-courses", name: "SolidWorks Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "SolidWorks Essential", categorySlug: "mechanical-courses", name: "SolidWorks Essential", desc: "Rapid mechanical product prototyping.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Helps you design machine parts, structural frames, and 3D components while generating their 2D manufacturing blueprints. The most widely used mechanical design utility software for rapid product prototyping and part assembly logic.",
     learns: [
       "Getting Started with SolidWorks",
@@ -1285,7 +1285,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "CATIA Essential", categorySlug: "mechanical-courses", name: "CATIA Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "CATIA Essential", categorySlug: "mechanical-courses", name: "CATIA Essential", desc: "Designs complex aircraft geometry.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "An advanced software used to model complex aircraft surfaces, high-level automotive parts, and massive multi-component assemblies. The definitive tier-1 engineering standard software utilized by global aerospace corporations for full aircraft definition.",
     learns: [
       "Getting Started with SolidWorks",
@@ -1300,7 +1300,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Ansys Workbench Essential", categorySlug: "mechanical-courses", name: "Ansys Workbench Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Ansys Workbench Essential", categorySlug: "mechanical-courses", name: "Ansys Workbench Essential", desc: "Simulates physical part stress.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Simulates and tests how mechanical components behave under real-world structural stress, thermal heat loads, and vibrations. Reduces the need for physical prototypes by testing material breaking points inside a virtual multi-physics space.",
     learns: [
       "FEA Concepts",
@@ -1317,7 +1317,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Mastercam Essential", categorySlug: "mechanical-courses", name: "Mastercam Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Mastercam Essential", categorySlug: "mechanical-courses", name: "Mastercam Essential", desc: "Generates CNC machine G-code.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Used to design precise toolpaths and generate automatic machine instructions (G-code) for CNC manufacturing. Bridges digital design with factory automation by programming error-free milling, turning, and cutting coordinates.",
     learns: [
       "Mill - 2D Hole Marking",
@@ -1333,7 +1333,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Ansys Fluent Essential", categorySlug: "mechanical-courses", name: "Ansys Fluent Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Ansys Fluent Essential", categorySlug: "mechanical-courses", name: "Ansys Fluent Essential", desc: "Simulates fluid airflow dynamics.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A Computational Fluid Dynamics (CFD) software used to accurately simulate airflow, fluid motion, and gas-thermal interactions. Critical for predicting automotive aerodynamics coefficients, combustion efficiencies, and cooling system capacities.",
     learns: [
       "CFD solving workflow",
@@ -1349,7 +1349,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Autodesk Inventor Essential", categorySlug: "mechanical-courses", name: "Autodesk Inventor Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Autodesk Inventor Essential", categorySlug: "mechanical-courses", name: "Autodesk Inventor Essential", desc: "Designs sheet metal parts.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Focuses on digital product prototyping, sheet metal layouts, and mechanical design simulation workflows. Enables mechanical drafters to create precise unfolding patterns for sheet metal fabrications and mold designs.",
     learns: [
       "Inventor Work Environment",
@@ -1366,7 +1366,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "CATIA Kinematics Essential", categorySlug: "mechanical-courses", name: "CATIA Kinematics Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "CATIA Kinematics Essential", categorySlug: "mechanical-courses", name: "CATIA Kinematics Essential", desc: "Simulates dynamic mechanism motion.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Virtually simulates the motion, velocity, speed, and joint constraints of moving mechanical mechanisms. Allows designers to clear mechanical interferences and optimize linkage trajectories before component manufacturing.",
     learns: [
       "Multiple Joints",
@@ -1382,7 +1382,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Creo Simulate Essential", categorySlug: "mechanical-courses", name: "Creo Simulate Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Creo Simulate Essential", categorySlug: "mechanical-courses", name: "Creo Simulate Essential", desc: "Detects stress points early.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Allows engineers to detect stress points and calculate structural load limits early during the product design phase. Ensures parts are optimally lightweight yet rigid enough to survive high structural field stress inputs.",
     learns: [
       "Preparing FEA Model",
@@ -1399,7 +1399,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "HyperMesh Essential", categorySlug: "mechanical-courses", name: "HyperMesh Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "HyperMesh Essential", categorySlug: "mechanical-courses", name: "HyperMesh Essential", desc: "Generates crash simulation meshes.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A powerful FEA pre-processing tool used to break complex structures into mesh elements for crash and safety testing simulations. Provides engineers with unparalleled mesh topology control required for high-accuracy automotive crashworthiness studies.",
     learns: [
       "FEA Meshing",
@@ -1416,7 +1416,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "NX Nastran Essential", categorySlug: "mechanical-courses", name: "NX Nastran Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "NX Nastran Essential", categorySlug: "mechanical-courses", name: "NX Nastran Essential", desc: "Calculates aircraft structural vibrations.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A premium mathematical solver used to analyze linear/non-linear structural stress, noise levels, vibrations, and thermal dynamics. The leading structural calculation engine trusted for verifying critical safety components in high-stress aerospace vehicles.",
     learns: [
       "FEA Concepts",
@@ -1432,7 +1432,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "NX CAM Essential", categorySlug: "mechanical-courses", name: "NX CAM Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "NX CAM Essential", categorySlug: "mechanical-courses", name: "NX CAM Essential", desc: "Programs 5-axis CNC machines.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Gives you precise control over multi-axis CNC milling, turning machines, and automated factory tooling schedules. Maximizes automated factory outputs by optimizing material removal paths on advanced 5-axis heavy machining complexes.",
     learns: [
       "CAM Configuration",
@@ -1449,7 +1449,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Reverse Engineering using CATIA Essential", categorySlug: "mechanical-courses", name: "Reverse Engineering using CATIA Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Reverse Engineering using CATIA Essential", categorySlug: "mechanical-courses", name: "Reverse Engineering using CATIA Essential", desc: "Reconstructs 3D scanned models.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Teaches you how to take scanned 3D mesh data from physical parts and reconstruct them into clean digital 3D models. Crucial for updating legacy part drawings, modifying physical casting dies, and matching handmade prototypes.",
     learns: [
       "Digitized Shape Editor",
@@ -1463,7 +1463,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SolidWorks Motion Essential", categorySlug: "mechanical-courses", name: "SolidWorks Motion Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "SolidWorks Motion Essential", categorySlug: "mechanical-courses", name: "SolidWorks Motion Essential", desc: "Calculates mechanical motor torque.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A specialized module used to simulate and measure the physical forces, gears, and dynamic movements of working mechanisms. Calculates the exact power spikes, torque limits, and motor sizes needed to drive mechanical linkage structures safely.",
     learns: [
       "Basic Motion",
@@ -1476,7 +1476,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Non-Destructive Testing Essential", categorySlug: "mechanical-courses", name: "Non-Destructive Testing Essential", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Non-Destructive Testing Essential", categorySlug: "mechanical-courses", name: "Non-Destructive Testing Essential", desc: "Inspects defects without damage.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "A critical engineering method used to inspect internal cracks and defects in materials or welded joints without damaging them. Provides essential hands-on knowledge of ultrasonic, radiographic, and dye penetrant inspection criteria used in industrial safety.",
     learns: [
       "NDT Types",
@@ -1490,7 +1490,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in AutoCAD for Mechanical Engineers", categorySlug: "mechanical-courses", name: "Proficient in AutoCAD for Mechanical Engineers", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in AutoCAD for Mechanical Engineers", categorySlug: "mechanical-courses", name: "Proficient in AutoCAD for Mechanical Engineers", desc: "Drafts 2D mechanical sheets.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Covers basic mechanical symbols, layout drafting, and advanced 2D manufacturing sheet design. Builds the primary industrial baseline for drafting component limits, geometric views, and orthographic design standards.",
     modules: [
       {
@@ -1527,7 +1527,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Creo", categorySlug: "mechanical-courses", name: "Proficient in Creo", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in Creo", categorySlug: "mechanical-courses", name: "Proficient in Creo", desc: "Advanced machinery component design.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Advanced training in building industry-level machinery design, complex assembly mechanisms, and parametric 3D products. Prepares you for top-tier automation roles by teaching fully parameterized configuration tables and complex assemblies handling.",
     modules: [
       {
@@ -1564,7 +1564,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in SolidWork", categorySlug: "mechanical-courses", name: "Proficient in SolidWork", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in SolidWork", categorySlug: "mechanical-courses", name: "Proficient in SolidWork", desc: "Advanced weldments and sheetmetal.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Focuses on managing complex machine elements, automated components, and creating factory-ready production blueprints. Master structural welding framing models, advanced sheet metal workflows, and configuration tables for product variants.",
     modules: [
       {
@@ -1597,7 +1597,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in NX", categorySlug: "mechanical-courses", name: "Proficient in NX", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in NX", categorySlug: "mechanical-courses", name: "Proficient in NX", desc: "High-end surface product modeling.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Advanced tool workflows for high-end product lifecycle engineering, systematic structural modeling, and heavy surface detailing. Unlocks enterprise-level model sharing, advanced sheet metal design matrices, and deeply nested assembly structures.",
     modules: [
       {
@@ -1634,7 +1634,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in CATIA", categorySlug: "mechanical-courses", name: "Proficient in CATIA", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in CATIA", categorySlug: "mechanical-courses", name: "Proficient in CATIA", desc: "Advanced aerospace body engineering.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Advanced modeling tailored for large-scale aircraft fuselages, car body surfaces, and industry-standard moving assemblies. The premium standard specialization for landing elite structural engineering positions inside international transport and defense supply chains.",
     modules: [
       {
@@ -1670,7 +1670,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in CAE", categorySlug: "mechanical-courses", name: "Proficient in CAE", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in CAE", categorySlug: "mechanical-courses", name: "Proficient in CAE", desc: "Optimizes structural safety margins.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Computer-Aided Engineering training to simulate real-world physics environments and analyze product durability and stress behaviors. Empowers structural optimization specialists to reduce structural weight while confidently improving safety safety margins.",
     modules: [
       {
@@ -1707,7 +1707,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Ansys", categorySlug: "mechanical-courses", name: "Proficient in Ansys", desc: "Site plans, layouts & structural drawings.", duration: "3 Months", cat: "Civil", image: imgCivil,
+    slug: "Proficient in Ansys", categorySlug: "mechanical-courses", name: "Proficient in Ansys", desc: "Advanced multi-physics fluid calculations.", duration: "3 Months", cat: "Civil", image: imgCivil,
     details: "Hyper-accurate numerical calculations for advanced multi-physics fluids interaction, thermal load, and overall structural strength. The definitive advanced credential confirming your ability to solve complex combined thermal-structural fatigue puzzles.",
     modules: [
       {
@@ -1748,7 +1748,7 @@ export const courses: Course[] = [
   // MEP, Piping & Plant //
 
   {
-    slug: "PDMS Essential", categorySlug: "mep-courses", name: "PDMS Essential", desc: "Schematic, panel & wiring design.", duration: "2 Months", cat: "Elec", image: imgElec,
+    slug: "PDMS Essential", categorySlug: "mep-courses", name: "PDMS Essential", desc: "Models database plant piping.", duration: "2 Months", cat: "Elec", image: imgElec,
     details: "Used to design complex 3D piping layouts, equipment modeling, and structural frames for oil refineries and chemical plants. Teaches you how to build intelligent, database-driven process plant models without structural space conflicts.",
     learns: [
       " File Management",
@@ -1764,7 +1764,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "HVAC Design Essential", categorySlug: "mep-courses", name: "HVAC Design Essential", desc: "BIM modeling for architects.", duration: "3 Months", cat: "BIM", image: imgRevit,
+    slug: "HVAC Design Essential", categorySlug: "mep-courses", name: "HVAC Design Essential", desc: "Sizes duct airflow networks.", duration: "3 Months", cat: "BIM", image: imgRevit,
     details: "Focuses on designing building ventilation systems, air conditioning networks, duct layouts, and heat load calculations. Prepares engineers to size duct runs, balance airflow paths, and match chillers with building heat profiles.",
     learns: [
       "Fundamentals of HVAC",
@@ -1781,7 +1781,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "REVIT MEP Essential", categorySlug: "mep-courses", name: "REVIT MEP Essential", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "REVIT MEP Essential", categorySlug: "mep-courses", name: "REVIT MEP Essential", desc: "Integrates building utility networks.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Integrates mechanical, electrical, and plumbing networks directly into a master architectural model using the BIM platform. Maintains cross-discipline data synchronization to prevent electrical conduits from conflicting with heavy structural beams.",
     learns: [
       "Worksharing",
@@ -1798,7 +1798,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in MEP Design", categorySlug: "mep-courses", name: "Proficient in MEP Design", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Proficient in MEP Design", categorySlug: "mep-courses", name: "Proficient in MEP Design", desc: "Complete building service planning.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Advanced course covering complete electrical wiring plans, water drainage plumbing, and HVAC systems for commercial buildings. Provides the total holistic engineering view required to manage high-density utility corridors in high-rise structures.",
     modules: [
       {
@@ -1836,7 +1836,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in HVAC and MEP Design", categorySlug: "mep-courses", name: "Proficient in HVAC and MEP Design", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Proficient in HVAC and MEP Design", categorySlug: "mep-courses", name: "Proficient in HVAC and MEP Design", desc: "Leads end-to-end building services.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Combines building workflows, ventilation ducts, power layouts, and drainage tracking for high-level service engineering. Trains consultants to lead full building services optimization drives from initial concept sketches up to construction signs off.",
     modules: [
       {
@@ -1875,7 +1875,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Piping Design", categorySlug: "mep-courses", name: "Proficient in Piping Design", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Proficient in Piping Design", categorySlug: "mep-courses", name: "Proficient in Piping Design", desc: "Routes industrial pressure pipes.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Focuses on advanced pipe routing, stress analysis, valve arrangements, and isometric blueprints for industrial fluid transport. Develops specialized knowledge regarding thermal expansion loops, pipe support criteria, and pressure code drop mathematics.",
     modules: [
       {
@@ -1914,7 +1914,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SmartPlant 3D (SP3D)", categorySlug: "mep-courses", name: "SP3D", desc: "SP3D", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "SmartPlant 3D (SP3D)", categorySlug: "mep-courses", name: "SP3D", desc: "Models oil refinery plants.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "An industry-standard data-centric software used for 3D plant design, complex pipe routing, and structural layouts in massive oil and gas projects. Unlocks high-demand technical careers within international engineering procurement and construction megaprojects.",
     learns: [
       "SmartPlant 3D Interface & Navigation",
@@ -1927,7 +1927,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "E3D", categorySlug: "mep-courses", name: "E3D", desc: "E3D", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "E3D", categorySlug: "mep-courses", name: "E3D", desc: "High-speed 3D plant modeling.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Utilizes Aveva Everything3D for next-generation plant engineering, offering ultra-fast 3D modeling, advanced visualization, and clash detection. Integrates cloud asset databases with structural designs to build interactive 3D digital plant models instantly.",
     learns: [
       "E3D Interface & Project Setup",
@@ -1943,7 +1943,7 @@ export const courses: Course[] = [
   // Enterprise Resource Planning //
 
   {
-    slug: "SAP Finance and Controlling (FICO)", categorySlug: "enterprise-courses", name: "SAP Finance and Controlling (FICO)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "SAP Finance and Controlling (FICO)", categorySlug: "enterprise-courses", name: "SAP Finance and Controlling (FICO)", desc: "Tracks corporate financial ledgers.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "An enterprise ERP module used to track a company's complete financial accounting (FI) and internal cost management (CO). The backbone system used by multinational entities to lock ledger inputs, verify asset accounts, and manage corporate profit margins.",
     learns: [
       "General Ledger (GL) Accounting",
@@ -1957,7 +1957,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SAP Material Management (MM)", categorySlug: "enterprise-courses", name: "SAP Material Management (MM)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "SAP Material Management (MM)", categorySlug: "enterprise-courses", name: "SAP Material Management (MM)", desc: "Automates raw material stock.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Systematically manages raw material procurement, factory inventory control, stock checks, and vendor invoices. Optimizes supply chain lifecycles by balancing raw inventory stocks against active factory production requirements.",
     learns: [
       "Procurement & Purchasing Process",
@@ -1972,7 +1972,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SAP Production and Planning (PP)", categorySlug: "enterprise-courses", name: "SAP Production and Planning (PP)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "SAP Production and Planning (PP)", categorySlug: "enterprise-courses", name: "SAP Production and Planning (PP)", desc: "Schedules shop floor production.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Used to track daily factory production schedules, master planning, shop floor execution, and material requirements (MRP). Enables manufacturing planners to eliminate factory floor idle times and automate bulk material orders smoothly.",
     learns: [
       "Production Planning & Scheduling",
@@ -1985,7 +1985,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "SAP Sales and Distribution (SD)", categorySlug: "enterprise-courses", name: "SAP Sales and Distribution (SD)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "SAP Sales and Distribution (SD)", categorySlug: "enterprise-courses", name: "SAP Sales and Distribution (SD)", desc: "Handles shipping and billing.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Manages corporate-level product shipping, billing matrices, customer order processing, and delivery management. Streamlines the full order-to-cash business process cycle for lightning-fast international client fulfillment operations.",
     learns: [
       "Customer Master Data",
@@ -2001,7 +2001,7 @@ export const courses: Course[] = [
   // Project Management //
 
   {
-    slug: "Primavera Project Planning and Management (Foundation)", categorySlug: "project-courses", name: "Primavera Project Planning and Management (Foundation)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Primavera Project Planning and Management (Foundation)", categorySlug: "project-courses", name: "Primavera Project Planning and Management (Foundation)", desc: "Builds initial project baselines.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Introduces fundamental project management concepts, Work Breakdown Structures (WBS), and initial planning frameworks. Builds the primary framework for managing infrastructure milestones and defining contractual clear dependencies.",
     learns: [
       "Project Structure",
@@ -2018,7 +2018,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Primavera Scheduling Professional (SPP)", categorySlug: "project-courses", name: "Primavera Scheduling Professional (SPP)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Primavera Scheduling Professional (SPP)", categorySlug: "project-courses", name: "Primavera Scheduling Professional (SPP)", desc: "Tracks critical path schedules.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Focuses on the Critical Path Method (CPM), mapping complex activity dependencies, and managing massive project timelines. Trains planners to manage multi-tiered calendars, resource leveling curves, and critical timeline baseline controls.",
     learns: [
       "Precedence Diagraming",
@@ -2029,7 +2029,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Primavera Tracking Professional (TP)", categorySlug: "project-courses", name: "Primavera Tracking Professional (TP)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Primavera Tracking Professional (TP)", categorySlug: "project-courses", name: "Primavera Tracking Professional (TP)", desc: "Tracks field delay variances.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Compares planned timelines against actual field progress during execution to track project delays, variances, and performance metrics. Gives management the precise metric analysis required to execute real-time structural cost-recovery strategies during active construction delays.",
     learns: [
       "Budgeting",
@@ -2044,7 +2044,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Primavera Application Administration (AA)", categorySlug: "project-courses", name: "Primavera Application Administration (AA)", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Primavera Application Administration (AA)", categorySlug: "project-courses", name: "Primavera Application Administration (AA)", desc: "Configures enterprise user permissions.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Manages the software's backend administration, including database setup, user permissions, and Enterprise Project Structure (EPS) configurations. Crucial for IT managers setting up secure data sharing protocols for vast engineering task forces globally.",
     learns: [
       "Managing Primavera Users",
@@ -2059,7 +2059,7 @@ export const courses: Course[] = [
   // Finance & Accounting //
 
   {
-    slug: "Business Accounting and Taxation", categorySlug: "finance-courses", name: "Business Accounting and Taxation", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Business Accounting and Taxation", categorySlug: "finance-courses", name: "Business Accounting and Taxation", desc: "Handles GST tax returns.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Covers daily ledger accounting, financial statement preparation, and core corporate taxation like GST and TDS calculations. Bridges theoretical finance with practical corporate compliance reporting required by active commercial enterprises.",
     learns: [
       "Practical Accounting & Bookkeeping",
@@ -2073,7 +2073,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Tally Prime Foundation", categorySlug: "finance-courses", name: "Tally Prime Foundation", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Tally Prime Foundation", categorySlug: "finance-courses", name: "Tally Prime Foundation", desc: "Basic bookkeeping voucher entry.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Helps you learn the basics of Tally software navigation, simple voucher entries, inventory setup, and invoice generation. The core stepping stone for accounting students seeking immediate entry into SME corporate bookkeeping fields.",
     learns: [
       "Fundamentals of Accounting",
@@ -2089,7 +2089,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Tally Prime Advanced", categorySlug: "finance-courses", name: "Tally Prime Advanced", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Tally Prime Advanced", categorySlug: "finance-courses", name: "Tally Prime Advanced", desc: "Manages payroll and inventory.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Handles advanced inventory tracking, multi-currency processing, complex payrolls, and detailed statutory compliance for GST filing. Prepares corporate tax accountants to process manufacturing journals, handle exports, and auto-reconcile bank statements.",
     learns: [
       "Advanced Accounting in Tally Prime",
@@ -2103,7 +2103,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Tally Prime Complete", categorySlug: "finance-courses", name: "Tally Prime Complete", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Tally Prime Complete", categorySlug: "finance-courses", name: "Tally Prime Complete", desc: "Full corporate auditing skills.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "A complete course covering everything from basic bookkeeping to financial reporting, auditing features, and backup data management. Provides the full master-level skill set required to operate as an independent commercial auditor or lead retail accountant.",
     learns: [
       "Fundamentals of Accounting",
@@ -2126,7 +2126,7 @@ export const courses: Course[] = [
   // General CAD & QA //
 
   {
-    slug: "AutoCAD Essential", categorySlug: "general-courses", name: "AutoCAD Essential", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "AutoCAD Essential", categorySlug: "general-courses", name: "AutoCAD Essential", desc: "Reads basic 2D drawings.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "A building-block course covering basic engineering drafting symbols, simple blueprints, and accurate 2D layouts. The foundational prerequisite required to open, read, print, and navigate standard multi-industry engineering drawings.",
     learns: [
       "Drafting - Best Practices",
@@ -2143,7 +2143,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in CAD", categorySlug: "general-courses", name: "Proficient in CAD", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Proficient in CAD", categorySlug: "general-courses", name: "Proficient in CAD", desc: "Advanced systematic drafting techniques.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Advanced engineering design training focused on systematic structural views and industry-standard 2D/3D drafting frameworks. Develops advanced file sharing mechanics, layer standardizations, and custom dynamic block programming skills.",
     modules: [
       {
@@ -2179,7 +2179,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in QA/QC", categorySlug: "general-courses", name: "Proficient in QA/QC", desc: "Structural analysis & design.", duration: "2 Months", cat: "Civil", image: imgStaad,
+    slug: "Proficient in QA/QC", categorySlug: "general-courses", name: "Proficient in QA/QC", desc: "Inspects job site quality.", duration: "2 Months", cat: "Civil", image: imgStaad,
     details: "Teaches quality testing and structural inspection procedures to ensure construction works perfectly match standard engineering codes. Prepares site inspection teams to manage non-conformance reports, concrete crush checks, and material testing audits.",
     modules: [
       {
@@ -2217,7 +2217,7 @@ export const courses: Course[] = [
   // Data Analytics & Reporting //
 
   {
-    slug: "MS Excel (Basics)", categorySlug: "data-courses", name: "MS Excel (Basics)", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
+    slug: "MS Excel (Basics)", categorySlug: "data-courses", name: "MS Excel (Basics)", desc: "Formats basic numeric tables.", duration: "3 Months", cat: "IT", image: imgPython,
     details: "A fundamental spreadsheet course covering basic formulas, data filtering, and formatting raw data into structured tables. The ultimate essential professional life skill utilized across every office department globally to organize daily numeric data.",
     learns: [
       "Introduction to MS Office",
@@ -2234,7 +2234,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Advanced Excel", categorySlug: "data-courses", name: "Advanced Excel", desc: "MERN stack with live projects.", duration: "5 Months", cat: "IT", image: imgFullStack,
+    slug: "Advanced Excel", categorySlug: "data-courses", name: "Advanced Excel", desc: "Builds dynamic dashboard reports.", duration: "5 Months", cat: "IT", image: imgFullStack,
     details: "Focuses on creating dynamic dashboards, automating lookups, complex data manipulation, and building macro tools for documentation. Unlocks powerful corporate data mining capabilities using arrays, advanced pivot logic, and power query automation.",
     learns: [
       "Creation of personalized templates",
@@ -2260,7 +2260,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Microsoft Power BI", categorySlug: "data-courses", name: "Microsoft Power BI", desc: "Python, ML, Pandas & visualization.", duration: "5 Months", cat: "IT", image: imgDataScience,
+    slug: "Microsoft Power BI", categorySlug: "data-courses", name: "Microsoft Power BI", desc: "Visualizes interactive data analytics.", duration: "5 Months", cat: "IT", image: imgDataScience,
     details: "A top data analytics application used to transform raw data reports into interactive visual charts and real-time business insights. Enables tracking analysts to blend disparate corporate database matrices into stunning, auto-updating executive web reports.",
     learns: [
       "Introducing Power BI Desktop",
@@ -2279,7 +2279,7 @@ export const courses: Course[] = [
   // Electrical & Electronics //
 
   {
-    slug: "Proficient in AutoCAD for Electrical & Electronics Engineers", categorySlug: "electrical-courses", name: "Proficient in AutoCAD for Electrical & Electronics Engineers", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
+    slug: "Proficient in AutoCAD for Electrical & Electronics Engineers", categorySlug: "electrical-courses", name: "Proficient in AutoCAD for Electrical & Electronics Engineers", desc: "Drafts electrical panel schematics.", duration: "3 Months", cat: "IT", image: imgPython,
     details: "Dedicated drafting tool for drawing electrical circuit schematics, internal panel wiring routings, and single-line diagrams. Ensures sub-station layouts and panel internal connection profiles flawlessly follow global industrial layout rules.",
     modules: [
       {
@@ -2317,7 +2317,7 @@ export const courses: Course[] = [
   },
 
   {
-    slug: "Proficient in Electrical CAD", categorySlug: "electrical-courses", name: "Proficient in Electrical CAD", desc: "MERN stack with live projects.", duration: "5 Months", cat: "IT", image: imgFullStack,
+    slug: "Proficient in Electrical CAD", categorySlug: "electrical-courses", name: "Proficient in Electrical CAD", desc: "Designs automated PLC circuits.", duration: "5 Months", cat: "IT", image: imgFullStack,
     details: "Used to design and manage industrial automation layouts, electrical wiring harnesses, and component layout logic. Teaches you how to build database-linked terminal diagrams that automatically update PLC terminal schedules.",
     modules: [
       {
@@ -2358,7 +2358,7 @@ export const courses: Course[] = [
   // Digital Marketing //
 
   {
-    slug: "Certified Digital Marketing Program (Foundation)", categorySlug: "digital-courses", name: "Certified Digital Marketing Program (Foundation)", desc: "From basics to automation & APIs.", duration: "3 Months", cat: "IT", image: imgPython,
+    slug: "Certified Digital Marketing Program (Foundation)", categorySlug: "digital-courses", name: "Certified Digital Marketing Program (Foundation)", desc: "Promotes online business growth.", duration: "3 Months", cat: "IT", image: imgPython,
     details: "Explores online business promotion methods, search engine optimization setups, and internet tools to maximize audience reach. Provides the vital strategic framework needed to execute targeted social campaigns and analyze digital customer traffic patterns.",
     learns: [
       "Digital Marketing Overview Domain Names & Hosting",
@@ -2412,7 +2412,7 @@ export const testimonialsData = [
   { name: "ABISHEK KARUPPIAH", course: "AutoCAD 2D & 3D", text: "xcellent training centre with experienced trainers and practical learning. The AutoCAD 2D & 3D course was well structured and helped me gain strong drafting and 3D modeling skills.", rating: 5, link: "https://share.google/dfmB2EW9XbaOrhgIZ" },
   { name: "RISHI", course: "Practical Training", text: "They provide excellent service and good coaching. The training was well structured, practical, and easy to understand.", rating: 5, link: "https://share.google/4aI2g12iPeE9fdtSQ" },
   { name: "Muhammed Sirajudeen", course: "Beginner Course", text: "I joined as a beginner, but the trainers and staff guided me patiently at every step. Their support and clear explanations helped me learn confidently and improve my skills.", rating: 4, link: "https://share.google/yeeBfNM8jP7k5Tf8n" },
-  { name: "Sooriya Narain Gopalkrishna", course: "VR & AR Workshop", text: "The VR & AR workshop was highly informative and helped me learn many new concepts with practical exposure.", rating: 5, link: "https://share.google/s4vi0tHEGJLnvzfuW" },
+  { name: "Narain Gopalkrishna", course: "VR & AR Workshop", text: "The VR & AR workshop was highly informative and helped me learn many new concepts with practical exposure.", rating: 5, link: "https://share.google/s4vi0tHEGJLnvzfuW" },
   { name: "J. Shrikiruthika", course: "Java", text: "I'm doing my Java course in this centre. The teaching methodology is excellent, and after every topic we receive practical projects that help improve our coding skills and confidence.", rating: 5, link: "https://share.google/rUwuvYnHlnP5eEML9" },
   { name: "Kamaleswar Sivasankaran", course: "Java & Web Development", text: "Recently completed Java and Web Development courses here. The trainers are highly experienced, the curriculum is well structured, and the institute provides excellent guidance with practical learning.", rating: 5, link: "https://share.google/6Dc26T9oqQuRHTxrF" },
   { name: "Saroj Kumar Ramesh", course: "Training Workshop", text: "This workshop was very useful and provided valuable practical knowledge. I really enjoyed the learning experience.", rating: 5, link: "https://share.google/2pXZFCkXGf4vIrS1h" },

@@ -40,6 +40,15 @@ export function Testimonials({ limit }: { limit?: number }) {
                 <div className="text-xs text-muted-foreground">{displayItems[i].course}</div>
               </div>
             </div>
+            
+            <a 
+              href={displayItems[i].link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="absolute bottom-6 right-6 md:right-8 text-xs font-semibold text-brand-red flex items-center group transition-colors hover:text-brand-dark-red cursor-pointer"
+            >
+              View Review <ArrowRight className="h-3 w-3 ml-1 transition-transform group-hover:translate-x-1" />
+            </a>
           </div>
 
           <div className="mt-6 flex items-center justify-center gap-3">

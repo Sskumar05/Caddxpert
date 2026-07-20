@@ -13,6 +13,7 @@ import { Newsletter } from "@/components/site/Newsletter";
 import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { PageWrapper } from "@/components/site/PageWrapper";
+import { FAQ } from "@/components/site/FAQ";
 import { link } from "fs";
 
 export const Route = createFileRoute("/")({
@@ -61,6 +62,7 @@ function Index() {
           </div>
         </div>
         {/* <Newsletter /> */}
+        <FAQ />
       </PageWrapper>
       <Footer />
       <WhatsAppFloat />

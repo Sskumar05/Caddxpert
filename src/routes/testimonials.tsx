@@ -4,7 +4,7 @@ import { Footer } from "@/components/site/Footer";
 import { WhatsAppFloat } from "@/components/site/WhatsAppFloat";
 import { PageWrapper } from "@/components/site/PageWrapper";
 import { Breadcrumb } from "@/components/site/Breadcrumb";
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, ArrowRight } from "lucide-react";
 import { testimonialsData } from "@/lib/data";
 
 export const Route = createFileRoute("/testimonials")({
@@ -47,14 +47,24 @@ function TestimonialsPage() {
                 <p className="text-foreground/90 leading-relaxed flex-1 italic">
                   "{item.text}"
                 </p>
-                <div className="mt-6 flex items-center gap-3 pt-6 border-t border-border">
-                  <div className="h-10 w-10 rounded-full bg-gradient-to-br from-brand-red to-brand-dark-red text-white flex items-center justify-center font-bold text-sm">
-                    {item.name.charAt(0)}
+                <div className="mt-6 flex items-center justify-between pt-6 border-t border-border">
+                  <div className="flex items-center gap-3">
+                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-brand-red to-brand-dark-red text-white flex items-center justify-center font-bold text-sm">
+                      {item.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-bold text-charcoal text-sm">{item.name}</div>
+                      <div className="text-xs text-muted-foreground">{item.course}</div>
+                    </div>
                   </div>
-                  <div>
-                    <div className="font-bold text-charcoal text-sm">{item.name}</div>
-                    <div className="text-xs text-muted-foreground">{item.course}</div>
-                  </div>
+                  <a 
+                    href={item.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-xs font-semibold text-brand-red flex items-center group transition-colors hover:text-brand-dark-red cursor-pointer"
+                  >
+                    View <ArrowRight className="h-3 w-3 ml-1 transition-transform group-hover:translate-x-1" />
+                  </a>
                 </div>
               </div>
             ))}

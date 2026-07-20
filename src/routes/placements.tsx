@@ -96,8 +96,8 @@ function PlacementsPage() {
               <div className="flex flex-col justify-center p-10 md:p-12 lg:p-14" data-aos="fade-left" data-aos-delay="100">
                 {/* <span className="eyebrow mb-4">Career Support</span> */}
                 <h2 className="text-3xl md:text-4xl font-extrabold text-charcoal leading-tight">
-                  Empowering growth through<br />
-                  <span className="text-brand-red">expert IT solutions.</span>
+                  Are Internship<br />
+                  <span className="text-brand-red">Partner</span>
                 </h2>
                 <p className="mt-4 text-base text-muted-foreground leading-relaxed">
 Infynux Solutions is your trusted partner for driving digital transformation. Based in Nagapattinam, we deliver cutting-edge technology that bridges the gap between your vision and real-world success.                </p>

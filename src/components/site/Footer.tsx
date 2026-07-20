@@ -52,7 +52,17 @@ export function Footer() {
         <div>
           <h4 className="font-bold text-base">Popular Courses</h4>
           <ul className="mt-4 space-y-2 text-sm text-white/70">
-            {courseCategories.map((category) => (
+            {courseCategories
+              .filter(category => [
+                "civil-courses",
+                "mechanical-courses",
+                "project-courses",
+                "electrical-courses",
+                "digital-courses",
+                "software-courses",
+                "special-programs"
+              ].includes(category.slug))
+              .map((category) => (
               <li key={category.slug}>
                 <Link 
                   to="/courses/category/$categorySlug" 
