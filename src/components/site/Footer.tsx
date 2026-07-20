@@ -112,7 +112,7 @@ export function Footer() {
           <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
         </div>
       </div>
-      <div className="container-x pb-6 pt-3 text-center text-xs text-white/40 ml-[-20%] mr-[23%]">
+      <div className="container-x pb-6 pt-3 text-center text-xs text-white/40 ml-[-20%] mr-[20%]">
         Developed by{" "}
         <a
           href="https://infynuxsolutions.in/"
